@@ -1,0 +1,35 @@
+@import "./_vars.scss";
+
+#sticker {
+
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+
+  .sticker {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.5;
+    &.on {
+      opacity: 1;
+    }
+  }
+
+  #sticker-kelp-healthy {
+    background-image: url('../img/sticker/kelp-healthy.png');
+    width: 238px;
+    height: 304px;
+  }
+  #sticker-kelp-unhealthy {
+    background-image: url('../img/sticker/kelp-unhealthy.png');
+    width: 209px;
+    height: 284px;
+  }
+  #sticker-whale {
+    background-image: url('../img/sticker/whale.png');
+    width: 469px;
+    height: 130px;
+  }
+
+}

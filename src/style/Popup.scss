@@ -1,0 +1,271 @@
+@import "./_vars.scss";
+
+#popup {
+
+  .container-popup-pop {
+
+    position: absolute;
+
+    .popup-pop {
+
+      position: absolute;
+      z-index: 1000;
+      width: 590px;
+      color: #000;
+
+      &.wide {
+        width: 820px;
+      }
+
+      .popup-pop-button {
+        position: absolute;
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:active {
+          opacity: 0.7;
+        }
+        &.selected {
+          .system-0 &  {
+            background-image: url('../img/system-0-popup-btn-active.png') !important;
+          }
+          .system-1 &  {
+            background-image: url('../img/system-1-popup-btn-active.png') !important;
+          }
+          .system-2 &  {
+            background-image: url('../img/system-2-popup-btn-active.png') !important;
+          }
+        }
+      }
+      #popup-pop-button-0 {
+        background-image: url('../img/popup-btn-1.png');
+      }
+      #popup-pop-button-1 {
+        background-image: url('../img/popup-btn-2.png');
+      }
+      #popup-pop-button-2 {
+        background-image: url('../img/popup-btn-3.png');
+      }
+      #popup-pop-button-3 {
+        background-image: url('../img/popup-btn-4.png');
+      }
+      #popup-pop-button-4 {
+        background-image: url('../img/popup-btn-5.png');
+      }
+      #popup-pop-button-5 {
+        background-image: url('../img/popup-btn-6.png');
+      }
+      #popup-pop-button-6 {
+        background-image: url('../img/popup-btn-7.png');
+      }
+      #popup-pop-button-7 {
+        background-image: url('../img/popup-btn-8.png');
+      }
+      #popup-pop-button-8 {
+        background-image: url('../img/popup-btn-9.png');
+      }
+      .bottom-left {
+        top: calc(100% + 84px) !important;
+        left: 25% !important;
+      }
+      .bottom-right {
+        top: calc(100% + 84px) !important;
+        left: 75% !important;
+      }
+      .top-left {
+        top: -84px !important;
+        left: 25% !important;
+      }
+      .top-right {
+        top: -84px !important;
+        left: 75% !important;
+      }
+      .left {
+        left: -84px !important;
+      }
+      .right {
+        left: calc(100% + 84px) !important;
+      }
+
+      .popup-pop-bubble {
+        background-color: #ff0000;
+        min-height: 230px;
+        display: inline-block;
+        //border-radius: 10px;
+
+        .popup-pop-image {
+          //position: absolute;
+          //z-index: 1000;
+          //top: -246px;
+          //left: calc(50% - 128px);
+          //left: -220px;
+          float: left;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          //width: 256px;
+          //height: 256px;
+          width:: 222px;
+          height: 222px;
+          //background-size: 107%;
+          //background-position: -5px -5px;
+          border: 4px solid #fff;
+          //border-radius: 50%;
+          background-color: #fff;
+        }
+        #pop-image-upwelling-harmful-algae {
+          background-image: url('../img/popup/upwelling_harmful-algae.png');
+        }
+        #pop-image-upwelling-mammal-impact {
+          background-image: url('../img/popup/upwelling_mammal-impact.png');
+        }
+        #pop-image-upwelling-ocean-research {
+          background-image: url('../img/popup/upwelling_ocean-research.png');
+        }
+        #pop-image-upwelling-plankton-bloom {
+          background-image: url('../img/popup/upwelling_plankton-bloom.png');
+        }
+        #pop-image-upwelling-shelter-kelp {
+          background-image: url('../img/popup/upwelling_shelter-kelp.png');
+        }
+        #pop-image-fog-field-of-fog {
+          background-image: url('../img/popup/fog_field-of-fog.png');
+        }
+        #pop-image-fog-fog-bank {
+          background-image: url('../img/popup/fog_fog-bank.png');
+        }
+        #pop-image-fog-fog-drip {
+          background-image: url('../img/popup/fog_fog-drip.png');
+        }
+        #pop-image-carbon-landscape-in-motion {
+          background-image: url('../img/popup/carbon_landscape-in-motion.png');
+        }
+        #pop-image-carbon-seafood-connection {
+          background-image: url('../img/popup/carbon_seafood-connection.png');
+        }
+        #pop-image-carbon-volcano-remains {
+          background-image: url('../img/popup/carbon_volcano-remains.png');
+        }
+
+        .popup-pop-bubble-btn-close {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          background-image: url('../img/popup-btn-close.svg');
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          width: 10px;
+          height: 10px;
+          &:active {
+            opacity: 0.7;
+          }
+        }
+
+        .popup-pop-bubble-text-container {
+          float: left;
+          padding: 20px;
+          width: 550px;
+          h1 {
+            font-family: 'W-Semibold', 'SourceHanSansCN-Medium';
+            font-size: 28px;
+            line-height: 31px;
+            font-weight: normal;
+            white-space: pre-line;
+            padding-bottom: 6px;
+            width: 358px;
+            .system-0 & {
+              color: $blue;
+            }
+            .system-1 & {
+              color: $orange;
+            }
+            .system-2 & {
+              color: $green;
+            }
+          }
+
+          p {
+            font-family: 'W-Book', 'SourceHanSansCN-Book';
+            font-size: 22px;
+            line-height: 25px;
+            font-weight: normal;
+            white-space: pre-line;
+          }
+
+        }
+
+      }
+
+      .popup-pop-bubble-tail-top-left,
+      .popup-pop-bubble-tail-top-right,
+      .popup-pop-bubble-tail-right,
+      .popup-pop-bubble-tail-bottom-left,
+      .popup-pop-bubble-tail-bottom-right,
+      .popup-pop-bubble-tail-left {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
+      }
+
+      .popup-pop-bubble-tail-top-left {
+        top: -22px !important;
+        left: 25% !important;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 54px solid #fff;
+      }
+      .popup-pop-bubble-tail-top-right {
+        top: -22px !important;
+        left: 75% !important;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 54px solid #fff;
+      }
+      .popup-pop-bubble-tail-right {
+        left: calc(100% + 22px) !important;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 54px solid #fff;
+      }
+
+      .popup-pop-bubble-tail-bottom-left {
+        top: calc(100% + 22px) !important;
+        left: 25% !important;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 54px solid #fff;
+      }
+      .popup-pop-bubble-tail-bottom-right {
+        top: calc(100% + 22px) !important;
+        left: 75% !important;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 54px solid #fff;
+      }
+
+      .popup-pop-bubble-tail-left {
+        left: -22px !important;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-right: 54px solid #fff;
+      }
+
+
+    }
+
+  }
+
+  .mask {
+    /*visibility: hidden;*/
+    display: none !important;
+  }
+
+}

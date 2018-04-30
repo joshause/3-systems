@@ -1,0 +1,25 @@
+#anim {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden; }
+  #anim #container-images {
+    position: relative;
+    width: 1344000px;
+    height: 1080px;
+    float: left;
+    left: 0px; }
+    #anim #container-images img {
+      width: 1920px;
+      height: 1080px;
+      border: none;
+      display: block !important;
+      float: left; }
+    #anim #container-images.play-fog-play-all {
+      animation: play-fog-play-all 25s steps(700) infinite alternate; }
+
+/* to left = animation steps * -1920 */
+@keyframes play-fog-play-all {
+  from {
+    left: 0; }
+  to {
+    left: -1344000px; } }
