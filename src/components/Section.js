@@ -33,6 +33,14 @@ class Section extends Component {
       activeAnim: a
     })
     this.props.handlerReceivePopupTouch(p)
+
+    var pops = document.getElementsByClassName("container-popup-pop")
+    for(var i =0; i < pops.length; i++) {
+      pops[i].style.zIndex = "999"
+    }
+    var el = e.target.id
+    document.getElementById(el).closest(".container-popup-pop").style.zIndex = "1000"
+    
   }
 
   _closePop(e) {

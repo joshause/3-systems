@@ -13,27 +13,47 @@ class Anim extends Component {
             {
               arrAnims: [
                 {
-                  name: 'fog-play-all',
-                  filebase: '03_fog_playAll_',
-                  frames: 700
+                  name: 'upwelling-play-all',
+                  filebase: 'upwelling_v16_playAll_',
+                  frames: 792
                 }
               ]
             },
             {
               arrAnims: [
                 {
-                  name: 'fog-play-all',
-                  filebase: '03_fog_playAll_',
-                  frames: 700
+                  name: 'upwelling-california-current',
+                  filebase: 'upwelling_v16_caCurrent_',
+                  frames: 301
+                },
+                {
+                  name: 'upwelling-prevailing-winds',
+                  filebase: 'upwelling_v16_prevailingWinds_',
+                  frames: 301
+                },
+                {
+                  name: 'upwelling-nutrient-rich-water',
+                  filebase: 'upwelling_v16_nutrientUpwelling_',
+                  frames: 411
+                },
+                {
+                  name: 'upwelling-plankton-bloom',
+                  filebase: 'upwelling_v16_planktonBloom_',
+                  frames: 301
                 }
               ]
             },
             {
               arrAnims: [
                 {
-                  name: 'fog-play-all',
-                  filebase: '03_fog_playAll_',
-                  frames: 700
+                  name: 'upwelling-sea-of-change',
+                  filebase: 'upwelling_v16_seaOfChange_',
+                  frames: 301
+                },
+                {
+                  name: 'upwelling-toxic-bloom',
+                  filebase: 'upwelling_v16_toxicBloom_',
+                  frames: 361
                 }
               ]
             }
@@ -128,16 +148,22 @@ class Anim extends Component {
     var _this = this
     const rows = []
 
+    var pop = 0
+    if (this.props.activePop) {
+      pop = this.props.activePop
+    }
+
     var anims =  this.state.arrSystems[this.props.system].arrSections[this.props.currentSection].arrAnims
 
     anims.forEach(function(anim, i) {
-
       var images = []
-      for (var j = 0; j < anim['frames']; j++) {
-        var fiver = ('0000' + j).slice(-5)
-        images.push(
-          <img key={j} src={"/animation/"+anim['name']+"/" + anim['filebase'] + "" + fiver + ".png"} alt="" />
-        )
+      if (i === pop) {
+        for (var j = 0; j < anim['frames']; j++) {
+          var fiver = ('0000' + j).slice(-5)
+          images.push(
+            <img key={j} src={"/animation/"+anim['name']+"/" + anim['filebase'] + "" + fiver + ".png"} alt="" />
+          )
+        }
       }
 
       rows.push(

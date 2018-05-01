@@ -16,13 +16,13 @@ class Sticker extends Component {
               arrStickers: [
                 {
                   name: 'whale',
-                  x: 450,
-                  y: 780
+                  x: 570,
+                  y: 790
                 },
                 {
                   name: 'kelp-healthy',
-                  x: 1200,
-                  y: 700
+                  x: 1400,
+                  y: 650
                 }
               ]
             },
@@ -30,8 +30,13 @@ class Sticker extends Component {
               arrStickers: [
                 {
                   name: 'kelp-unhealthy',
-                  x: 1200,
-                  y: 700
+                  x: 1430,
+                  y: 680
+                },
+                {
+                  name: 'crab',
+                  x: 1030,
+                  y: 420
                 }
               ]
             }

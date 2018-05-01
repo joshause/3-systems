@@ -4,7 +4,6 @@
   overflow: hidden; }
   #anim #container-images {
     position: relative;
-    width: 1344000px;
     height: 1080px;
     float: left;
     left: 0px; }
@@ -15,9 +14,73 @@
       display: block !important;
       float: left; }
     #anim #container-images.play-fog-play-all {
-      animation: play-fog-play-all 25s steps(700) infinite alternate; }
+      width: 1344000px;
+      animation: play-fog-play-all 25s steps(700) infinite; }
+    #anim #container-images.play-upwelling-play-all {
+      width: 1520640px;
+      animation: play-upwelling-play-all 28s steps(792) infinite; }
+    #anim #container-images.play-upwelling-california-current {
+      width: 577920px;
+      animation: play-upwelling-california-current 11s steps(301) infinite; }
+    #anim #container-images.play-upwelling-prevailing-winds {
+      width: 577920px;
+      animation: play-upwelling-prevailing-winds 11s steps(301) infinite; }
+    #anim #container-images.play-upwelling-nutrient-rich-water {
+      width: 789120px;
+      animation: play-upwelling-nutrient-rich-water 15s steps(411) infinite; }
+    #anim #container-images.play-upwelling-plankton-bloom {
+      width: 577920px;
+      animation: play-upwelling-plankton-bloom 11s steps(301) infinite; }
+    #anim #container-images.play-upwelling-sea-of-change {
+      width: 577920px;
+      animation: play-upwelling-sea-of-change 11s steps(301) infinite; }
+    #anim #container-images.play-upwelling-toxic-bloom {
+      width: 693120px;
+      animation: play-upwelling-toxic-bloom 13s steps(361) infinite; }
 
 /* to left = animation steps * -1920 */
+@keyframes play-upwelling-play-all {
+  from {
+    left: 0; }
+  to {
+    left: -1520640px; } }
+
+@keyframes play-upwelling-california-current {
+  from {
+    left: 0; }
+  to {
+    left: -577920px; } }
+
+@keyframes play-upwelling-prevailing-winds {
+  from {
+    left: 0; }
+  to {
+    left: -577920px; } }
+
+@keyframes play-upwelling-nutrient-rich-water {
+  from {
+    left: 0; }
+  to {
+    left: -789120px; } }
+
+@keyframes play-upwelling-plankton-bloom {
+  from {
+    left: 0; }
+  to {
+    left: -577920px; } }
+
+@keyframes play-upwelling-sea-of-change {
+  from {
+    left: 0; }
+  to {
+    left: -577920px; } }
+
+@keyframes play-upwelling-toxic-bloom {
+  from {
+    left: 0; }
+  to {
+    left: -693120px; } }
+
 @keyframes play-fog-play-all {
   from {
     left: 0; }

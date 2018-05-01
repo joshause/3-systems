@@ -20,112 +20,112 @@ class Popup extends Component {
             {
               arrPopups: [
                 {
-                  xPos: 1166,
-                  yPos: 490,
+                  xPos: 900,
+                  yPos: 510,
                   image: '',
                   sticker: '',
-                  anim: 'fog-play-all',
-                  origin: 'left' // left, right, top-left, top-right, bottom-left, bottom-right
+                  anim: 'upwelling-california-current',
+                  origin: 'bottom-left' // left, right, top-left, top-right, bottom-left, bottom-right
                 },
                 {
-                  xPos: 700,
-                  yPos: 390,
+                  xPos: 720,
+                  yPos: 330,
                   image: '',
                   sticker: '',
-                  anim: 'fog-play-all',
+                  anim: 'upwelling-prevailing-winds',
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 350,
-                  yPos: 590,
+                  xPos: 500,
+                  yPos: 450,
                   image: '',
                   sticker: '',
-                  anim: 'fog-play-all',
+                  anim: 'upwelling-nutrient-rich-water',
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 1400,
-                  yPos: 600,
+                  xPos: 980,
+                  yPos: 780,
                   image: 'upwelling-plankton-bloom',
                   sticker: '',
-                  anim: '',
-                  origin: 'bottom-left'
+                  anim: 'upwelling-plankton-bloom',
+                  origin: 'top-right'
                 },
                 {
-                  xPos: 845,
-                  yPos: 740,
-                  image: '',
-                  sticker: 'kelp-healthy',
-                  anim: '',
-                  origin: 'bottom-right'
-                },
-                {
-                  xPos: 920,
-                  yPos: 910,
-                  image: 'upwelling-shelter-kelp',
+                  xPos: 500,
+                  yPos: 800,
+                  image: 'placeholder',
                   sticker: 'kelp-healthy',
                   anim: '',
                   origin: 'right'
                 },
                 {
-                  xPos: 510,
-                  yPos: 700,
-                  image: '',
+                  xPos: 1000,
+                  yPos: 400,
+                  image: 'upwelling-shelter-kelp',
+                  sticker: 'kelp-healthy',
+                  anim: '',
+                  origin: 'bottom-left'
+                },
+                {
+                  xPos: 620,
+                  yPos: 710,
+                  image: 'placeholder',
                   sticker: 'whale',
                   anim: '',
-                  origin: 'bottom-right'
+                  origin: 'bottom-left'
                 }
               ]
             },
             {
               arrPopups: [
                 {
-                  xPos: 660,
-                  yPos: 750,
+                  xPos: 510,
+                  yPos: 430,
                   image: '',
                   sticker: '',
-                  anim: 'fog-play-all',
-                  origin: 'left'
+                  anim: 'upwelling-sea-of-change',
+                  origin: 'bottom-left'
                 },
                 {
-                  xPos: 1350,
-                  yPos: 520,
+                  xPos: 1060,
+                  yPos: 420,
                   image: 'upwelling-harmful-algae',
                   sticker: '',
-                  anim: '',
-                  origin: 'left'
+                  anim: 'upwelling-toxic-bloom',
+                  origin: 'bottom-left'
                 },
                 {
-                  xPos: 1250,
-                  yPos: 540,
+                  xPos: 980,
+                  yPos: 710,
                   image: 'upwelling-mammal-impact',
                   sticker: '',
                   anim: '',
-                  origin: 'bottom-right'
+                  origin: 'top-right'
                 },
                 {
-                  xPos: 710,
+                  xPos: 600,
                   yPos: 365,
                   image: '',
-                  sticker: '',
+                  sticker: 'crab',
                   anim: '',
                   origin: 'bottom-right'
                 },
                 {
-                  xPos: 660,
-                  yPos: 820,
+                  xPos: 740,
+                  yPos: 800,
                   image: '',
                   sticker: 'kelp-unhealthy',
                   anim: '',
                   origin: 'right'
                 },
                 {
-                  xPos: 780,
-                  yPos: 510,
+                  xPos: 700,
+                  yPos: 670,
                   image: 'upwelling-ocean-research',
                   sticker: '',
                   anim: '',
-                  origin: 'left'
+                  origin: 'top-left'
                 }
               ]
             }

@@ -1,10 +1,29 @@
 @import "./_vars.scss";
 
+
+@mixin if-direct-parent($parent-selector) {
+  $current-sequences: &;
+  $new-sequences: ();
+
+  @each $sequence in $current-sequences {
+    $current-selector: nth($sequence, -1);
+    $prepended-selector: join($parent-selector, $current-selector);
+    $new-sequence: set-nth($sequence, -1, $prepended-selector);
+    $new-sequences: append($new-sequences, $new-sequence, comma);
+  }
+
+  @at-root #{$new-sequences} {
+    @content;
+  }
+}
+
+
 #popup {
 
   .container-popup-pop {
 
     position: absolute;
+    z-index: 999;
 
     .popup-pop {
 
@@ -93,8 +112,9 @@
       }
 
       .popup-pop-bubble {
-        background-color: #ff0000;
+        background-color: #fff;
         min-height: 230px;
+        margin-top: -1;
         display: inline-block;
         //border-radius: 10px;
 
@@ -116,6 +136,9 @@
           border: 4px solid #fff;
           //border-radius: 50%;
           background-color: #fff;
+        }
+        #pop-image-placeholder {
+          background-image: url('../img/popup/placeholder.png');
         }
         #pop-image-upwelling-harmful-algae {
           background-image: url('../img/popup/upwelling_harmful-algae.png');
@@ -172,10 +195,10 @@
           h1 {
             font-family: 'W-Semibold', 'SourceHanSansCN-Medium';
             font-size: 28px;
-            line-height: 31px;
+            line-height: 33px;
             font-weight: normal;
             white-space: pre-line;
-            padding-bottom: 6px;
+            padding-bottom: 11px;
             width: 358px;
             .system-0 & {
               color: $blue;
@@ -191,7 +214,7 @@
           p {
             font-family: 'W-Book', 'SourceHanSansCN-Book';
             font-size: 22px;
-            line-height: 25px;
+            line-height: 26px;
             font-weight: normal;
             white-space: pre-line;
           }
@@ -212,7 +235,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0.5;
+        opacity: 0.4;
       }
 
       .popup-pop-bubble-tail-top-left {
