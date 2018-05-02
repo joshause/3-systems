@@ -51,12 +51,40 @@ class Sticker extends Component {
             },
             {
               arrStickers: [
-
+                {
+                  name: 'elk',
+                  x: 1670,
+                  y: 465
+                }
               ]
             },
             {
               arrStickers: [
-
+                {
+                  name: 'car',
+                  x: 1470,
+                  y: 530
+                },
+                {
+                  name: 'oil-rig',
+                  x: 680,
+                  y: 440
+                },
+                {
+                  name: 'oyster',
+                  x: 1220,
+                  y: 580
+                },
+                {
+                  name: 'wind-turbine',
+                  x: 1700,
+                  y: 420
+                },
+                {
+                  name: 'redwood',
+                  x: 1020,
+                  y: 250
+                }
               ]
             }
           ]
@@ -75,7 +103,16 @@ class Sticker extends Component {
             },
             {
               arrStickers: [
-
+                {
+                  name: 'redwood-fog',
+                  x: 1000,
+                  y: 270
+                },
+                {
+                  name: 'wine',
+                  x: 1360,
+                  y: 340
+                }
               ]
             }
           ]

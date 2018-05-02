@@ -34,11 +34,11 @@ class Loader extends Component {
           {animFogPlayAll}
           </div>
           <div key="2" id="loader-source-images">
-            <div id="carbon_landscape-in-motion" />
+            <div id="carbon_land-on-the-move" />
             <div id="carbon_seafood-connection" />
             <div id="carbon_volcano-remains" />
             <div id="fog_field-of-fog" />
-            <div id="fog_fog-bank" />
+            <div id="fog_fog-blanket" />
             <div id="fog_fog-drip" />
             <div id="upwelling_harmful-algae" />
             <div id="upwelling_mammal-impact" />

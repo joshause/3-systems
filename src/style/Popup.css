@@ -63,40 +63,68 @@
     #popup .container-popup-pop .popup-pop .popup-pop-bubble {
       background-color: #fff;
       min-height: 230px;
-      margin-top: -1;
-      display: inline-block; }
+      margin-top: -1px;
+      display: inline-block;
+      /*
+        #pop-image-placeholder {
+          background-image: url('../img/popup/placeholder.png');
+        }
+        */ }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble .popup-pop-image {
         float: left;
         background-repeat: no-repeat;
         background-position: 0 0;
         width: 222px;
         height: 222px;
+        background-size: 101%;
         border: 4px solid #fff;
-        background-color: #fff; }
-      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-placeholder {
-        background-image: url("../img/popup/placeholder.png"); }
+        overflow: hidden; }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-harmful-algae {
-        background-image: url("../img/popup/upwelling_harmful-algae.png"); }
+        background-image: url("../img/popup/Upwell_harmful-algae-bloom.png"); }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-mammal-impact {
-        background-image: url("../img/popup/upwelling_mammal-impact.png"); }
+        background-image: url("../img/popup/Upwell_marine-mammal-impacts.png"); }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-ocean-research {
-        background-image: url("../img/popup/upwelling_ocean-research.png"); }
+        background-image: url("../img/popup/Upwell_ocean-research.png"); }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-plankton-bloom {
-        background-image: url("../img/popup/upwelling_plankton-bloom.png"); }
+        background-image: url("../img/popup/Upwell_plankton-bloom.png"); }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-shelter-kelp {
-        background-image: url("../img/popup/upwelling_shelter-kelp.png"); }
-      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-field-of-fog {
-        background-image: url("../img/popup/fog_field-of-fog.png"); }
-      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-fog-bank {
-        background-image: url("../img/popup/fog_fog-bank.png"); }
-      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-fog-drip {
-        background-image: url("../img/popup/fog_fog-drip.png"); }
-      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-landscape-in-motion {
-        background-image: url("../img/popup/carbon_landscape-in-motion.png"); }
+        background-image: url("../img/popup/Upwell_sheltered-by-kelp.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-kelp-forest {
+        background-image: url("../img/popup/Upwell_kelp-forest.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-dining-destinations {
+        background-image: url("../img/popup/Upwell_dining-destinations.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-upwelling-disappearing-kelp {
+        background-image: url("../img/popup/Upwell_disappearing-kelp.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-land-on-the-move {
+        background-image: url("../img/popup/Carbon_land-on-the-move.png"); }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-seafood-connection {
-        background-image: url("../img/popup/carbon_seafood-connection.png"); }
-      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-volcano-remains {
-        background-image: url("../img/popup/carbon_volcano-remains.png"); }
+        background-image: url("../img/popup/Carbon_seafood-connection.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-volcano-remnants {
+        background-image: url("../img/popup/Carbon_volcano-remnants.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-oil-reservoirs {
+        background-image: url("../img/popup/Carbon_californias-oil-reservoirs.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-air-and-ocean-interact {
+        background-image: url("../img/popup/Carbon_air-and-ocean-interact.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-carbon-forests-store-carbon {
+        background-image: url("../img/popup/Carbon_forests-store-carbon.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-field-of-fog {
+        background-image: url("../img/popup/Fog_field-of-fog.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-fog-blanket {
+        background-image: url("../img/popup/Fog_fog-blanket.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-fog-drip {
+        background-image: url("../img/popup/Fog_fog-drip.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-fantastic-fog-flows {
+        background-image: url("../img/popup/Fog_fantastic-fog-flows.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-drink-from-the-sea {
+        background-image: url("../img/popup/Fog_drink-from-the-sea.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-coastal-contours {
+        background-image: url("../img/popup/Fog_coastal-contours.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-chardonnay-loves-fog {
+        background-image: url("../img/popup/Fog_chardonnay-loves-fog.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-water-in-the-air {
+        background-image: url("../img/popup/Fog_water-in-the-air.png"); }
+      #popup .container-popup-pop .popup-pop .popup-pop-bubble #pop-image-fog-watershed-refill {
+        background-image: url("../img/popup/Fog_watershed-refill.png"); }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble .popup-pop-bubble-btn-close {
         position: absolute;
         right: 10px;

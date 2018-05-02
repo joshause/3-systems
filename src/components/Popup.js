@@ -44,8 +44,8 @@ class Popup extends Component {
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 980,
-                  yPos: 780,
+                  xPos: 940,
+                  yPos: 770,
                   image: 'upwelling-plankton-bloom',
                   sticker: '',
                   anim: 'upwelling-plankton-bloom',
@@ -54,7 +54,7 @@ class Popup extends Component {
                 {
                   xPos: 500,
                   yPos: 800,
-                  image: 'placeholder',
+                  image: 'upwelling-kelp-forest',
                   sticker: 'kelp-healthy',
                   anim: '',
                   origin: 'right'
@@ -70,7 +70,7 @@ class Popup extends Component {
                 {
                   xPos: 620,
                   yPos: 710,
-                  image: 'placeholder',
+                  image: 'upwelling-dining-destinations',
                   sticker: 'whale',
                   anim: '',
                   origin: 'bottom-left'
@@ -112,9 +112,9 @@ class Popup extends Component {
                   origin: 'bottom-right'
                 },
                 {
-                  xPos: 740,
-                  yPos: 800,
-                  image: '',
+                  xPos: 520,
+                  yPos: 780,
+                  image: 'upwelling-disappearing-kelp',
                   sticker: 'kelp-unhealthy',
                   anim: '',
                   origin: 'right'
@@ -139,50 +139,50 @@ class Popup extends Component {
             {
               arrPopups: [
                 {
-                  xPos: 1050,
-                  yPos: 440,
-                  image: 'carbon-landscape-in-motion',
+                  xPos: 550,
+                  yPos: 530,
+                  image: 'carbon-land-on-the-move',
                   sticker: '',
                   anim: '',
-                  origin: 'left' // left, right, top-left, top-right, bottom-left, bottom-right
+                  origin: 'top-right' // left, right, top-left, top-right, bottom-left, bottom-right
                 },
                 {
-                  xPos: 1050,
-                  yPos: 640,
+                  xPos: 750,
+                  yPos: 760,
                   image: '',
                   sticker: '',
-                  anim: '',
+                  anim: 'carbon-san-andreas-fault',
                   origin: 'right'
                 },
                 {
-                  xPos: 1320,
-                  yPos: 380,
+                  xPos: 1030,
+                  yPos: 410,
                   image: '',
                   sticker: '',
-                  anim: '',
-                  origin: 'top-left'
+                  anim: 'carbon-volcanoes-spew-carbon',
+                  origin: 'top-right'
                 },
                 {
-                  xPos: 1460,
-                  yPos: 340,
+                  xPos: 640,
+                  yPos: 300,
                   image: '',
                   sticker: '',
-                  anim: '',
-                  origin: 'top-left'
+                  anim: 'carbon-carbon-returns-to-rock',
+                  origin: 'bottom-right'
                 },
                 {
-                  xPos: 1100,
+                  xPos: 1080,
                   yPos: 930,
-                  image: '',
+                  image: 'carbon-oil-reservoirs',
                   sticker: '',
-                  anim: '',
+                  anim: 'carbon-oil-reservoirs',
                   origin: 'left'
                 },
                 {
-                  xPos: 1350,
-                  yPos: 640,
+                  xPos: 1240,
+                  yPos: 650,
                   image: '',
-                  sticker: '',
+                  sticker: 'elk',
                   anim: '',
                   origin: 'top-right'
                 }
@@ -191,60 +191,60 @@ class Popup extends Component {
             {
               arrPopups: [
                 {
-                  xPos: 1290,
-                  yPos: 720,
+                  xPos: 1120,
+                  yPos: 740,
                   image: '',
-                  sticker: '',
+                  sticker: 'car',
                   anim: '',
-                  origin: 'top-left'
+                  origin: 'top-right'
                 },
                 {
-                  xPos: 830,
+                  xPos: 630,
                   yPos: 850,
                   image: '',
-                  sticker: '',
-                  anim: '',
-                  origin: 'bottom-right'
-                },
-                {
-                  xPos: 960,
-                  yPos: 500,
-                  image: '',
-                  sticker: '',
+                  sticker: 'oil-rig',
                   anim: '',
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 940,
-                  yPos: 460,
+                  xPos: 1020,
+                  yPos: 740,
+                  image: 'carbon-air-and-ocean-interact',
+                  sticker: 'oyster',
+                  anim: '',
+                  origin: 'top-left'
+                },
+                {
+                  xPos: 790,
+                  yPos: 750,
                   image: 'carbon-seafood-connection',
                   sticker: '',
                   anim: '',
-                  origin: 'left'
+                  origin: 'top-right'
                 },
                 {
-                  xPos: 1060,
-                  yPos: 640,
-                  image: 'carbon-volcano-remains',
+                  xPos: 570,
+                  yPos: 360,
+                  image: 'carbon-volcano-remnants',
                   sticker: '',
                   anim: '',
                   origin: 'right'
                 },
                 {
-                  xPos: 1350,
-                  yPos: 660,
+                  xPos: 1280,
+                  yPos: 620,
                   image: '',
-                  sticker: '',
+                  sticker: 'wind-turbine',
                   anim: '',
                   origin: 'top-right'
                 },
                 {
-                  xPos: 1250,
-                  yPos: 760,
-                  image: '',
-                  sticker: '',
+                  xPos: 950,
+                  yPos: 530,
+                  image: 'carbon-forests-store-carbon',
+                  sticker: 'redwood',
                   anim: '',
-                  origin: 'top-right'
+                  origin: 'top-left'
                 }
               ]
             }
@@ -258,111 +258,111 @@ class Popup extends Component {
             {
               arrPopups: [
                 {
-                  xPos: 1200,
-                  yPos: 600,
-                  image: '',
-                  sticker: '',
-                  anim: '',
-                  origin: 'left'
-                },
-                {
-                  xPos: 880,
-                  yPos: 400,
-                  image: '',
-                  sticker: '',
-                  anim: '',
-                  origin: 'right'
-                },
-                {
-                  xPos: 400,
-                  yPos: 630,
-                  image: '',
-                  sticker: '',
-                  anim: '',
-                  origin: 'top-left'
-                },
-                {
-                  xPos: 880,
-                  yPos: 500,
-                  image: 'fog-fog-bank',
-                  sticker: '',
-                  anim: '',
-                  origin: 'left'
-                },
-                {
-                  xPos: 600,
-                  yPos: 690,
-                  image: '',
-                  sticker: '',
-                  anim: '',
-                  origin: 'top-left'
-                },
-                {
-                  xPos: 1260,
+                  xPos: 1150,
                   yPos: 720,
                   image: '',
                   sticker: '',
+                  anim: 'fog-california-current',
+                  origin: 'left'
+                },
+                {
+                  xPos: 930,
+                  yPos: 400,
+                  image: '',
+                  sticker: '',
+                  anim: 'fog-valley-vacuum',
+                  origin: 'bottom-right'
+                },
+                {
+                  xPos: 510,
+                  yPos: 430,
+                  image: 'fog-fog-blanket',
+                  sticker: '',
+                  anim: 'fog-fog-blanket',
+                  origin: 'bottom-left'
+                },
+                {
+                  xPos: 680,
+                  yPos: 410,
+                  image: 'fog-water-in-the-air',
+                  sticker: '',
                   anim: '',
+                  origin: 'bottom-left'
+                },
+                {
+                  xPos: 730,
+                  yPos: 720,
+                  image: '',
+                  sticker: '',
+                  anim: 'fog-ephemeral-fog',
                   origin: 'top-left'
                 },
                 {
-                  xPos: 1260,
-                  yPos: 520,
-                  image: '',
+                  xPos: 860,
+                  yPos: 700,
+                  image: 'fog-fantastic-fog-flows',
                   sticker: '',
-                  anim: '',
-                  origin: 'right'
+                  anim: 'fog-fantastic-fog-flows',
+                  origin: 'top-right'
+                },
+                {
+                  xPos: 1050,
+                  yPos: 400,
+                  image: 'fog-coastal-contours',
+                  sticker: '',
+                  anim: 'fog-coastal-contours',
+                  origin: 'bottom-right'
                 }
               ]
             },
             {
               arrPopups: [
                 {
-                  xPos: 680,
-                  yPos: 380,
-                  image: '',
-                  sticker: '',
+                  xPos: 820,
+                  yPos: 310,
+                  image: 'fog-drink-from-the-sea',
+                  sticker: 'redwood-fog',
                   anim: '',
-                  origin: 'bottom-right'
+                  origin: 'bottom-left'
                 },
                 {
-                  xPos: 1200,
-                  yPos: 500,
+                  xPos: 1020,
+                  yPos: 560,
                   image: 'fog-fog-drip',
                   sticker: '',
                   anim: '',
-                  origin: 'left'
+                  origin: 'top-left'
                 },
                 {
-                  xPos: 1400,
-                  yPos: 360,
-                  image: '',
+                  xPos: 1020,
+                  yPos: 340,
+                  image: 'fog-watershed-refill',
+                  sticker: '',
+                  anim: 'fog-watershed-refill',
+                  origin: 'bottom-right'
+                },
+                {
+                  xPos: 900,
+                  yPos: 380,
+                  image: 'fog-chardonnay-loves-fog',
                   sticker: '',
                   anim: '',
                   origin: 'bottom-right'
                 },
                 {
-                  xPos: 1400,
-                  yPos: 530,
-                  image: '',
-                  sticker: '',
-                  anim: '',
-                  origin: 'bottom-right'
-                },
-                {
-                  xPos: 1200,
-                  yPos: 530,
+                  xPos: 770,
+                  yPos: 700,
                   image: 'fog-field-of-fog',
                   sticker: '',
                   anim: '',
-                  origin: 'bottom-right'
+                  origin: 'top-right'
                 },
                 {
-                  xPos: 500,
-                  yPos: 700,
+                  xPos: 680,
+                  yPos: 670,
                   image: '',
                   sticker: '',
-                  anim: '',
+                  anim: 'fog-navigating-fog',
                   origin: 'top-left'
                 }
               ]

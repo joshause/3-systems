@@ -64,14 +64,36 @@ class Anim extends Component {
             {
               arrAnims: [
                 {
-                  name: 'fog-play-all',
-                  filebase: '03_fog_playAll_',
-                  frames: 700
+                  name: 'carbon-play-all',
+                  filebase: 'carbon_v17_playAll_',
+                  frames: 1007
                 }
               ]
             },
             {
-              arrAnims: []
+              arrAnims: [
+                {},
+                {
+                  name: 'carbon-san-andreas-fault',
+                  filebase: 'carbon_v16_SanAndreasFault_',
+                  frames: 301
+                },
+                {
+                  name: 'carbon-volcanoes-spew-carbon',
+                  filebase: 'carbon_v16_volcanoesSpewCarbon_',
+                  frames: 301
+                },
+                {
+                  name: 'carbon-carbon-returns-to-rock',
+                  filebase: 'carbon_v17_carbonReturnsToRock_',
+                  frames: 400
+                },
+                {
+                  name: 'carbon-oil-reservoirs',
+                  filebase: 'carbon_v16_OilReservoirs_',
+                  frames: 302
+                }
+              ]
             },
             {
               arrAnims: []
@@ -84,16 +106,63 @@ class Anim extends Component {
               arrAnims: [
                 {
                   name: 'fog-play-all',
-                  filebase: '03_fog_playAll_',
-                  frames: 700
+                  filebase: 'fog_v16_playAll_',
+                  frames: 996
                 }
               ]
             },
             {
-              arrAnims: []
+              arrAnims: [
+                {
+                  name: 'fog-california-current',
+                  filebase: 'fog_v16_caCurrent_',
+                  frames: 301
+                },
+                {
+                  name: 'fog-valley-vacuum',
+                  filebase: 'fog_v16_valleyVacuum_',
+                  frames: 301
+                },
+                {
+                  name: 'fog-fog-blanket',
+                  filebase: 'fog_v16_fogBlanket_',
+                  frames: 446
+                },
+                {},
+                {
+                  name: 'fog-ephemeral-fog',
+                  filebase: 'fog_v16_ephemeralFog_',
+                  frames: 321
+                },
+                {
+                  name: 'fog-fantastic-fog-flows',
+                  filebase: 'fog_v16_fantasticFogFlows_',
+                  frames: 301
+                },
+                {
+                  name: 'fog-coastal-contours',
+                  filebase: 'fog_v16_coastalContours_',
+                  frames: 301
+                }
+              ]
             },
             {
-              arrAnims: []
+              arrAnims: [
+                {},
+                {},
+                {
+                  name: 'fog-watershed-refill',
+                  filebase: 'fog_v16_watershedRefill_',
+                  frames: 301
+                },
+                {},
+                {},
+                {
+                  name: 'fog-navigating-fog',
+                  filebase: 'fog_v16_navigatingFog_',
+                  frames: 301
+                }
+              ]
             }
           ]
         }
@@ -118,16 +187,27 @@ class Anim extends Component {
 
   componentWillReceiveProps(nextProps) {
 
+    var anim
+
     if ((nextProps.activeAnim !== this.props.activeAnim) || (nextProps.activeSticker === ''))  {
       this.setState({
         activeAnim: nextProps.activeAnim
       })
     }
 
+    if (nextProps.system !== this.props.system) {
+      anim = this.state.arrSystems[nextProps.system].arrSections[this.props.currentSection].arrAnims[0]
+      if (anim['name']) {
+        this.setState({
+          activeAnim: anim['name']
+        })
+      }
+    }
+
     if (nextProps.currentSection !== this.props.currentSection) {
       // on 1st setcion load make first anim active
       if (nextProps.currentSection === 0) {
-        var anim = this.state.arrSystems[this.props.system].arrSections[nextProps.currentSection].arrAnims[0]
+        anim = this.state.arrSystems[this.props.system].arrSections[nextProps.currentSection].arrAnims[0]
         if (anim['name']) {
           this.setState({
             activeAnim: anim['name']

@@ -25,3 +25,35 @@
     background-image: url("../img/sticker/crab.png");
     width: 182px;
     height: 131px; }
+  #sticker #sticker-elk {
+    background-image: url("../img/sticker/elk.png");
+    width: 221px;
+    height: 161px; }
+  #sticker #sticker-wind-turbine {
+    background-image: url("../img/sticker/wind-turbine.png");
+    width: 194px;
+    height: 189px; }
+  #sticker #sticker-redwood {
+    background-image: url("../img/sticker/redwood.png");
+    width: 153px;
+    height: 238px; }
+  #sticker #sticker-oyster {
+    background-image: url("../img/sticker/oyster.png");
+    width: 171px;
+    height: 143px; }
+  #sticker #sticker-oil-rig {
+    background-image: url("../img/sticker/oil-rig.png");
+    width: 212px;
+    height: 200px; }
+  #sticker #sticker-car {
+    background-image: url("../img/sticker/car.png");
+    width: 274px;
+    height: 152px; }
+  #sticker #sticker-redwood-fog {
+    background-image: url("../img/sticker/redwood-fog.png");
+    width: 170px;
+    height: 246px; }
+  #sticker #sticker-wine {
+    background-image: url("../img/sticker/wine.png");
+    width: 178px;
+    height: 193px; }
