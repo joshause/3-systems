@@ -23,6 +23,11 @@ class Sticker extends Component {
                   name: 'kelp-healthy',
                   x: 1400,
                   y: 650
+                },
+                {
+                  name: 'otter',
+                  x: 1040,
+                  y: 450
                 }
               ]
             },
@@ -37,6 +42,11 @@ class Sticker extends Component {
                   name: 'crab',
                   x: 1030,
                   y: 420
+                },
+                {
+                  name: 'bouy',
+                  x: 760,
+                  y: 490
                 }
               ]
             }
@@ -72,8 +82,8 @@ class Sticker extends Component {
                 },
                 {
                   name: 'oyster',
-                  x: 1220,
-                  y: 580
+                  x: 1240,
+                  y: 600
                 },
                 {
                   name: 'wind-turbine',

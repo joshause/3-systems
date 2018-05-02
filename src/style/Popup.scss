@@ -167,6 +167,9 @@
         #pop-image-upwelling-disappearing-kelp {
           background-image: url('../img/popup/Upwell_disappearing-kelp.png');
         }
+        #pop-image-upwelling-toxic-buffet {
+          background-image: url('../img/popup/Upwell_toxic-buffet.png');
+        }
         #pop-image-carbon-land-on-the-move {
           background-image: url('../img/popup/Carbon_land-on-the-move.png');
         }
@@ -279,14 +282,14 @@
       }
 
       .popup-pop-bubble-tail-top-left {
-        top: -22px !important;
+        top: -24px !important;
         left: 25% !important;
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;
         border-bottom: 54px solid #fff;
       }
       .popup-pop-bubble-tail-top-right {
-        top: -22px !important;
+        top: -24px !important;
         left: 75% !important;
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;

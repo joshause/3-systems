@@ -63,7 +63,7 @@ class Popup extends Component {
                   xPos: 1000,
                   yPos: 400,
                   image: 'upwelling-shelter-kelp',
-                  sticker: 'kelp-healthy',
+                  sticker: 'otter',
                   anim: '',
                   origin: 'bottom-left'
                 },
@@ -106,7 +106,7 @@ class Popup extends Component {
                 {
                   xPos: 600,
                   yPos: 365,
-                  image: '',
+                  image: 'upwelling-toxic-buffet',
                   sticker: 'crab',
                   anim: '',
                   origin: 'bottom-right'
@@ -123,7 +123,7 @@ class Popup extends Component {
                   xPos: 700,
                   yPos: 670,
                   image: 'upwelling-ocean-research',
-                  sticker: '',
+                  sticker: 'bouy',
                   anim: '',
                   origin: 'top-left'
                 }
@@ -210,7 +210,7 @@ class Popup extends Component {
                   xPos: 1020,
                   yPos: 740,
                   image: 'carbon-air-and-ocean-interact',
-                  sticker: 'oyster',
+                  sticker: '',
                   anim: '',
                   origin: 'top-left'
                 },
@@ -218,7 +218,7 @@ class Popup extends Component {
                   xPos: 790,
                   yPos: 750,
                   image: 'carbon-seafood-connection',
-                  sticker: '',
+                  sticker: 'oyster',
                   anim: '',
                   origin: 'top-right'
                 },
@@ -266,8 +266,8 @@ class Popup extends Component {
                   origin: 'left'
                 },
                 {
-                  xPos: 930,
-                  yPos: 400,
+                  xPos: 800,
+                  yPos: 380,
                   image: '',
                   sticker: '',
                   anim: 'fog-valley-vacuum',
@@ -343,9 +343,9 @@ class Popup extends Component {
                 },
                 {
                   xPos: 900,
-                  yPos: 380,
+                  yPos: 360,
                   image: 'fog-chardonnay-loves-fog',
-                  sticker: '',
+                  sticker: 'wine',
                   anim: '',
                   origin: 'bottom-right'
                 },
