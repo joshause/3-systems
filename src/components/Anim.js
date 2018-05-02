@@ -241,7 +241,7 @@ class Anim extends Component {
         for (var j = 0; j < anim['frames']; j++) {
           var fiver = ('0000' + j).slice(-5)
           images.push(
-            <img key={j} src={"/animation/"+anim['name']+"/" + anim['filebase'] + "" + fiver + ".png"} alt="" />
+            <img key={j} src={process.env.REACT_APP_ANIMATION_PATH + "/" + anim['name']+"/" + anim['filebase'] + "" + fiver + ".png"} alt="" />
           )
         }
       }
