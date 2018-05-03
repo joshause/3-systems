@@ -25,14 +25,25 @@
         opacity: 0.7;
       }
       .system-0 & {
-        color: $blue
+        color: $blue;
       }
       .system-1 & {
-        color: $orange
+        color: $orange;
       }
       .system-2 & {
-        color: $green
+        color: $green;
       }
+      .credits & {
+        color: $gray !important;
+      }
+    }
+    &.credits {
+      span {
+        color: $gray;
+      }
+      border-left: none !important;
+      font-family: 'W-Narrow-Semibold';
+      font-size: 15px;
     }
     &.active {
       span {

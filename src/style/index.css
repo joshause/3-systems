@@ -84,3 +84,9 @@ body {
   body ul, body li {
     list-style: none;
     display: block; }
+  body sup, body sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em; }
+  body sub {
+    top: 0.4em; }

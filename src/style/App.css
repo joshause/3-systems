@@ -101,7 +101,7 @@
   0% {
     transform: translate(-1000px, -1100px); }
   50% {
-    transform: translate(0px, -1400px); }
+    transform: translate(-100px, -1100px); }
   100% {
     transform: translate(-1000px, -1100px); } }
 

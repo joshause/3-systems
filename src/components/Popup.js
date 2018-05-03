@@ -44,12 +44,12 @@ class Popup extends Component {
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 940,
-                  yPos: 770,
+                  xPos: 740,
+                  yPos: 410,
                   image: 'upwelling-plankton-bloom',
                   sticker: '',
                   anim: 'upwelling-plankton-bloom',
-                  origin: 'top-right'
+                  origin: 'bottom-right'
                 },
                 {
                   xPos: 500,
@@ -60,7 +60,7 @@ class Popup extends Component {
                   origin: 'right'
                 },
                 {
-                  xPos: 1000,
+                  xPos: 810,
                   yPos: 400,
                   image: 'upwelling-shelter-kelp',
                   sticker: 'otter',
@@ -88,8 +88,8 @@ class Popup extends Component {
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 1060,
-                  yPos: 420,
+                  xPos: 1020,
+                  yPos: 500,
                   image: 'upwelling-harmful-algae',
                   sticker: '',
                   anim: 'upwelling-toxic-bloom',
@@ -97,7 +97,7 @@ class Popup extends Component {
                 },
                 {
                   xPos: 980,
-                  yPos: 710,
+                  yPos: 706,
                   image: 'upwelling-mammal-impact',
                   sticker: '',
                   anim: '',
@@ -112,7 +112,7 @@ class Popup extends Component {
                   origin: 'bottom-right'
                 },
                 {
-                  xPos: 520,
+                  xPos: 530,
                   yPos: 780,
                   image: 'upwelling-disappearing-kelp',
                   sticker: 'kelp-unhealthy',
@@ -163,15 +163,15 @@ class Popup extends Component {
                   origin: 'top-right'
                 },
                 {
-                  xPos: 640,
-                  yPos: 300,
+                  xPos: 1140,
+                  yPos: 450,
                   image: '',
                   sticker: '',
                   anim: 'carbon-carbon-returns-to-rock',
-                  origin: 'bottom-right'
+                  origin: 'top-left'
                 },
                 {
-                  xPos: 1080,
+                  xPos: 950,
                   yPos: 930,
                   image: 'carbon-oil-reservoirs',
                   sticker: '',
@@ -199,7 +199,7 @@ class Popup extends Component {
                   origin: 'top-right'
                 },
                 {
-                  xPos: 630,
+                  xPos: 580,
                   yPos: 850,
                   image: '',
                   sticker: 'oil-rig',
@@ -207,12 +207,12 @@ class Popup extends Component {
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 1020,
-                  yPos: 740,
+                  xPos: 750,
+                  yPos: 430,
                   image: 'carbon-air-and-ocean-interact',
                   sticker: '',
                   anim: '',
-                  origin: 'top-left'
+                  origin: 'bottom-left'
                 },
                 {
                   xPos: 790,
@@ -275,7 +275,7 @@ class Popup extends Component {
                 },
                 {
                   xPos: 510,
-                  yPos: 430,
+                  yPos: 400,
                   image: 'fog-fog-blanket',
                   sticker: '',
                   anim: 'fog-fog-blanket',
@@ -283,7 +283,7 @@ class Popup extends Component {
                 },
                 {
                   xPos: 680,
-                  yPos: 410,
+                  yPos: 350,
                   image: 'fog-water-in-the-air',
                   sticker: '',
                   anim: '',
@@ -326,7 +326,7 @@ class Popup extends Component {
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 1020,
+                  xPos: 980,
                   yPos: 560,
                   image: 'fog-fog-drip',
                   sticker: '',
@@ -342,8 +342,8 @@ class Popup extends Component {
                   origin: 'bottom-right'
                 },
                 {
-                  xPos: 900,
-                  yPos: 360,
+                  xPos: 760,
+                  yPos: 400,
                   image: 'fog-chardonnay-loves-fog',
                   sticker: 'wine',
                   anim: '',

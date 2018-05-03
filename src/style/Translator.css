@@ -25,6 +25,14 @@
       color: #ff9e1b; }
     .system-2 #translator button span {
       color: #6cc24a; }
+    .credits #translator button span {
+      color: #676767 !important; }
+  #translator button.credits {
+    border-left: none !important;
+    font-family: 'W-Narrow-Semibold';
+    font-size: 15px; }
+    #translator button.credits span {
+      color: #676767; }
   #translator button.active span {
     font-family: 'W-Condensed-Semibold', 'SourceHanSansCN-Bold';
     color: #fff; }

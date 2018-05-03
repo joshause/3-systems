@@ -26,8 +26,8 @@ class Sticker extends Component {
                 },
                 {
                   name: 'otter',
-                  x: 1040,
-                  y: 450
+                  x: 1020,
+                  y: 420
                 }
               ]
             },
@@ -120,8 +120,8 @@ class Sticker extends Component {
                 },
                 {
                   name: 'wine',
-                  x: 1360,
-                  y: 340
+                  x: 1365,
+                  y: 360
                 }
               ]
             }
