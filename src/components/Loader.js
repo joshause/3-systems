@@ -8,7 +8,7 @@ class Loader extends Component {
     if (this.props.data !== prevProps.data) {
       setTimeout(function() {
         _this.props.handlerLoadComplete()
-      }, 60)
+      }, 120000)
     }
   }
 
@@ -211,17 +211,30 @@ class Loader extends Component {
           {animUpwellingToxicBloom}
           </div>
           <div key="2" id="loader-source-images">
+            <div id="carbon_air-and-ocean-interact" />
+            <div id="carbon_oil-reservoirs" />
+            <div id="carbon_forests-store-carbon" />
             <div id="carbon_land-on-the-move" />
             <div id="carbon_seafood-connection" />
-            <div id="carbon_volcano-remains" />
+            <div id="carbon_volcano-remnants" />
+            <div id="fog_chardonnay-loves-fog" />
+            <div id="fog_coastal-contours" />
+            <div id="fog_drink-from-sea" />
+            <div id="fog_fantastic-fog-flows" />
             <div id="fog_field-of-fog" />
             <div id="fog_fog-blanket" />
             <div id="fog_fog-drip" />
-            <div id="upwelling_harmful-algae" />
-            <div id="upwelling_mammal-impact" />
+            <div id="fog_water-in-the-air" />
+            <div id="fog_watershed-refill" />
+            <div id="upwelling_dining-destinations" />
+            <div id="upwelling_disappearing-kelp" />
+            <div id="upwelling_harmful-algae-bloom" />
+            <div id="upwelling_kelp-forest" />
+            <div id="upwelling_mammal-mammal-impacts" />
             <div id="upwelling_ocean-research" />
             <div id="upwelling_plankton-bloom" />
-            <div id="upwelling_shelter-kelp" />
+            <div id="upwelling_sheltered-by-kelp" />
+            <div id="upwelling_toxic-buffet" />
           </div>
         </div>
       )

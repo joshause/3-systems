@@ -19,7 +19,7 @@ class App extends Component {
       currentSection: 0,
       preview: false,
       actionTranslate: null,
-      inactivityInt: 9000000000,
+      inactivityInt: 90000,
       dateLastTouch: null
     }
 
