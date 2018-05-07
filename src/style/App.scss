@@ -3,7 +3,6 @@
   width: 1920px;
   height: 1080px;
   overflow: hidden;
-  //background-color: #999;
   color: #000;
 
   font-family: 'W-Medium', 'W-Book', Helvetica, Arial, sans-serif;
@@ -13,6 +12,7 @@
   &.preview {
     overflow: hidden;
     zoom: 0.6;
+    cursor: pointer !important;
   }
 
   #container-loader {
@@ -23,33 +23,6 @@
     z-index: 20;
   }
 
-  /*
-  #sky {
-    width: 1920px;
-    height: 1080px;
-    position: absolute;
-    z-index: 1;
-    background: radial-gradient(
-      ellipse at center,
-      #fff,
-      #999
-      );
-  }
-  #sky-trans {
-    width: 1920px;
-    height: 1080px;
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    background: radial-gradient(
-      ellipse at top right,
-      #fff,
-      #666
-      );
-    animation: animate-background 18s infinite;
-  }
-  */
-
   #sky {
     width: 1920px;
     height: 1080px;
@@ -58,27 +31,6 @@
     z-index: 1;
     background-color: #3d3d3d;
   }
-  /*
-  #sky-trans {
-    backface-visibility: hidden;
-    width: 1080px;
-    height: 1080px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
-    transform: translate(0px, 100px);
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0.2) 40%,
-      rgba(255, 255, 255, 0.1) 50%,
-      rgba(255, 255, 255, 0) 60%
-      );
-    background-size: 100%;
-    background-repeat: no-repeat;
-    animation: animate-background 20s infinite;
-  }
-  */
 
   #sky-trans {
     backface-visibility: hidden;
@@ -110,6 +62,16 @@
     background-color: #000;
   }
 
+  #container-credits {
+    width: 1920px;
+    height: 1035px;
+    overflow: hidden;
+    position: absolute;
+    top: 45px;
+    z-index: 9;
+    background-color: #999;
+  }
+
   #container-system {
     width: 1920px;
     height: 1080px;
@@ -135,17 +97,3 @@
     transform: translate(-1000px, -1100px);
   }
 }
-
-/*
-@keyframes animate-background {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-*/

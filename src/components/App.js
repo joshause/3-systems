@@ -3,6 +3,7 @@ import '../style/App.css'
 import fetchJsonp from 'fetch-jsonp'
 import Loader from './Loader'
 import Translator from './Translator'
+import Credits from './Credits'
 import System from './System'
 
 class App extends Component {
@@ -10,11 +11,14 @@ class App extends Component {
     super()
     this.state = {
       system: 0, // 0:upwelling || 1:carbon || 2:fog
-      display: 'loader', // loader || system || ? || attract?
+      display: 'loader', // loader || system || credits
       data: null,
       dataSystem0: null,
       dataSystem1: null,
       dataSystem2: null,
+      dataCredits0: null,
+      dataCredits1: null,
+      dataCredits2: null,
       currentLanguage: 0, // 0:english || 1:spanish || 2:chinese || 3:filipino
       currentSection: 0,
       preview: false,
@@ -28,8 +32,11 @@ class App extends Component {
 
     // Loader handler
     this.handlerLoadComplete = this._loadComplete.bind(this)
-    // Translator handler
+    // Translator handlers
     this.handlerSelectLanguage = this._selectLanguage.bind(this)
+    this.handlerSelectCredits = this._selectCredits.bind(this)
+    // Credits handlers
+    this.handlerCloseCredits = this._closeCredits.bind(this)
     // System handler by way of Nav handler
     this.handlerSelectSection = this._selectSection.bind(this)
 
@@ -132,6 +139,7 @@ class App extends Component {
           this.setState({
             currentSection: 0,
             currentLanguage: 0,
+            display: 'system',
             dateLastTouch: null
           })
         }
@@ -141,7 +149,7 @@ class App extends Component {
 
   _getData() {
     var _this = this
-    fetchJsonp(process.env.REACT_APP_REST_URL)
+    fetchJsonp(process.env.REACT_APP_REST_URL_TEXT)
     .then(function (response) {
       return response.json()
     }).then(function(data) {
@@ -187,7 +195,7 @@ class App extends Component {
     })
   }
 
-  // Translator method
+  // Translator methods
   _selectLanguage(e, lang) {
     e.preventDefault()
     this.setState({
@@ -200,6 +208,23 @@ class App extends Component {
     var gaAction = this._getLanguageName(lang)
     var gaLabel = this._getSystemName(this.state.system) + ', ' + (this.state.currentSection + 1)
     this._googleTagManagerEventSend(gaCat, gaAction, gaLabel)
+  }
+
+  _selectCredits(e) {
+    e.preventDefault()
+    if (this.state.display !== 'credits') {
+      this.setState({
+        display: 'credits'
+      })
+    }
+  }
+  _closeCredits(e) {
+    e.preventDefault()
+    if (this.state.display === 'credits') {
+      this.setState({
+        display: 'system'
+      })
+    }
   }
 
   // System + Nav method
@@ -242,6 +267,13 @@ class App extends Component {
       dataSystem = this.state.dataSystem2
     }
 
+    var dataCredits = this.state.dataCredits0
+    if (this.state.system === 1) {
+      dataCredits = this.state.dataCredits1
+    } else if (this.state.system === 2) {
+      dataCredits = this.state.dataCredits2
+    }
+
     return (
       <div id="app" className={this.state.preview ? 'preview system-' + this.state.system : 'system-' + this.state.system} >
         <div id="container-loader"
@@ -259,6 +291,14 @@ class App extends Component {
           <Translator
             language={this.state.currentLanguage}
             handlerSelectLanguage={this.handlerSelectLanguage}
+            handlerSelectCredits={this.handlerSelectCredits}
+           />
+        </div>
+        <div id="container-credits"
+          className={this.state.display !== 'credits' ? 'hide' : ''}>
+          <Credits
+            dataCredits={dataCredits}
+            handlerCloseCredits={this.handlerCloseCredits}
            />
         </div>
         <div id="container-system"
