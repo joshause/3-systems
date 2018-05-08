@@ -16,6 +16,7 @@ class App extends Component {
       dataSystem0: null,
       dataSystem1: null,
       dataSystem2: null,
+      dataCredits: null,
       dataCredits0: null,
       dataCredits1: null,
       dataCredits2: null,
@@ -166,6 +167,25 @@ class App extends Component {
     })
   }
 
+  _getDataCredits() {
+    var _this = this
+    fetchJsonp(process.env.REACT_APP_REST_URL_CREDITS)
+    .then(function (response) {
+      return response.json()
+    }).then(function(data) {
+      _this.setState ({
+        dataCredits: data
+      })
+      _this._setDataCreditsSystem()
+    }).catch(function (ex) {
+      console.log('JSON fetch failed: fetching again in 30 seconds', ex)
+      // try again in 30 sec
+      setTimeout(function () {
+       _this._getDataCredits()
+     }, 30000)
+    })
+  }
+
   _setDataSystem() {
     if (this.state.data) {
       var arrUpwelling = []
@@ -184,6 +204,29 @@ class App extends Component {
         dataSystem0: arrUpwelling,
         dataSystem1: arrCarbon,
         dataSystem2: arrFog
+      })
+      this._getDataCredits()
+    }
+  }
+
+  _setDataCreditsSystem() {
+    if (this.state.dataCredits) {
+      var arrUpwelling = []
+      var arrCarbon = []
+      var arrFog = []
+      this.state.dataCredits.forEach(function(data, i) {
+        if (data.title === 'upwelling credits') {
+          arrUpwelling.push(data)
+        } else if (data.title === 'carbon credits') {
+          arrCarbon.push(data)
+        } else if (data.title === 'fog credits') {
+          arrFog.push(data)
+        }
+      })
+      this.setState ({
+        dataCredits0: arrUpwelling,
+        dataCredits1: arrCarbon,
+        dataCredits2: arrFog
       })
     }
   }
@@ -292,13 +335,15 @@ class App extends Component {
             language={this.state.currentLanguage}
             handlerSelectLanguage={this.handlerSelectLanguage}
             handlerSelectCredits={this.handlerSelectCredits}
+            display={this.state.display}
            />
         </div>
         <div id="container-credits"
-          className={this.state.display !== 'credits' ? 'hide' : ''}>
+          className={this.state.display !== 'credits' ? 'hide-anim' : ''}>
           <Credits
             dataCredits={dataCredits}
             handlerCloseCredits={this.handlerCloseCredits}
+            language={this.state.currentLanguage}
            />
         </div>
         <div id="container-system"

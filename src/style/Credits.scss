@@ -2,6 +2,8 @@
 
 #credits {
 
+  color: #fff;
+
   button {
     position: absolute;
     z-index: 1;
@@ -25,23 +27,37 @@
 		font-family: 'W-Narrow-Book';
     line-height: 1;
     font-size: 40px;
-    color: #fff;
+    letter-spacing: 1px;
   }
 
-  .credits-list-container {
-    margin-left:50px;
-    width: 1120px;
-    height: 800px;
-
-    ul {
+  ul {
+    margin-left: 205px;
+    padding-top: 11px;
+    width: 1800px;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    li {
       list-style: none;
-      width: 1120px;
-      columns: 2;
-      li {
-        list-style: none;
-        width: 500px;
-        padding-right: 50px;
+      display: inline-block;
+      width: 730px;
+      margin-right: 200px;
+      h2 {
+        font-family: 'W-Narrow-Book';
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: 2px;
+        padding-bottom: 12px;
+      }
+      p {
+        font-family: 'W-Book';
+        font-size: 22px;
+        line-height: 25px;
+        padding-bottom: 21px;
       }
     }
   }
+
 }

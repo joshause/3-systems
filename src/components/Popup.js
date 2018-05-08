@@ -468,7 +468,9 @@ class Popup extends Component {
       //let i = 0
       this.state.dataSectionPopupText.forEach(function(item, i) {
         var markupHeader = {__html: item[0][_this.props.language]}
-        var markupDescription = {__html: item[1][_this.props.language]}
+        var desc = item[1][_this.props.language]
+        desc = desc.replace(/<\/?a[^>]*>/g, "")
+        var markupDescription = {__html: desc}
         var cpopx = ''
         var cpopy = ''
         var origin = ''

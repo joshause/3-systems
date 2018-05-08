@@ -32,7 +32,7 @@ class Translator extends Component {
           className={this.state.currentLanguage === 0 ? 'active' : ''}
           onClick={(e) => this.props.handlerSelectLanguage(e, 0)}><span>ENGLISH</span></button>
         <button
-          className="credits"
+          className={this.props.display === 'credits' ? 'credits active' : 'credits'}
           onClick={(e) => this.props.handlerSelectCredits(e)}><span>Credits</span></button>
       </div>
     )

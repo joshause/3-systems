@@ -40,7 +40,7 @@ class Section extends Component {
     }
     var el = e.target.id
     document.getElementById(el).closest(".container-popup-pop").style.zIndex = "1000"
-    
+
   }
 
   _closePop(e) {
@@ -167,7 +167,10 @@ class Section extends Component {
     const rows = []
 
     var markupHeader = {__html: this.state.sectionHeader}
-    var markupDescription = {__html: this.state.sectionDescription}
+    var desc = this.state.sectionDescription
+    desc = desc.replace(/<\/?a[^>]*>/g, "")
+    var markupDescription = {__html: desc}
+
 
     rows.push(
       <div key="0">
