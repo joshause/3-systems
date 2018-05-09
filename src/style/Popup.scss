@@ -36,7 +36,7 @@
         width: 820px;
       }
 
-      .popup-pop-button {
+      .popup-pop-button-top {
         position: absolute;
         z-index: 999;
         background-repeat: no-repeat;
@@ -46,6 +46,20 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        background-image: none;
+      }
+
+      .popup-pop-button-bottom {
+        position: absolute;
+        z-index: 998;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: none;
         &:active {
           opacity: 0.7;
         }
@@ -60,34 +74,37 @@
             background-image: url('../img/system-2-popup-btn-active.png') !important;
           }
         }
+
       }
-      #popup-pop-button-0 {
+
+      #popup-pop-button-top-0 {
         background-image: url('../img/popup-btn-1.png');
       }
-      #popup-pop-button-1 {
+      #popup-pop-button-top-1 {
         background-image: url('../img/popup-btn-2.png');
       }
-      #popup-pop-button-2 {
+      #popup-pop-button-top-2 {
         background-image: url('../img/popup-btn-3.png');
       }
-      #popup-pop-button-3 {
+      #popup-pop-button-top-3 {
         background-image: url('../img/popup-btn-4.png');
       }
-      #popup-pop-button-4 {
+      #popup-pop-button-top-4 {
         background-image: url('../img/popup-btn-5.png');
       }
-      #popup-pop-button-5 {
+      #popup-pop-button-top-5 {
         background-image: url('../img/popup-btn-6.png');
       }
-      #popup-pop-button-6 {
+      #popup-pop-button-top-6 {
         background-image: url('../img/popup-btn-7.png');
       }
-      #popup-pop-button-7 {
+      #popup-pop-button-top-7 {
         background-image: url('../img/popup-btn-8.png');
       }
-      #popup-pop-button-8 {
+      #popup-pop-button-top-8 {
         background-image: url('../img/popup-btn-9.png');
       }
+
       .bottom-left {
         top: calc(100% + 84px) !important;
         left: 25% !important;
@@ -116,33 +133,18 @@
         min-height: 230px;
         margin-top: -1px;
         display: inline-block;
-        //border-radius: 10px;
 
         .popup-pop-image {
-          //position: absolute;
-          //z-index: 1000;
-          //top: -246px;
-          //left: calc(50% - 128px);
-          //left: -220px;
           float: left;
           background-repeat: no-repeat;
           background-position: 0 0;
-          //width: 256px;
-          //height: 256px;
           width:: 222px;
           height: 222px;
           background-size: 101%;
-          //background-position: -5px -5px;
           border: 4px solid #fff;
-          //border-radius: 50%;
-          //background-color: #ff0000;
           overflow: hidden;
         }
-        /*
-        #pop-image-placeholder {
-          background-image: url('../img/popup/placeholder.png');
-        }
-        */
+
         #pop-image-upwelling-harmful-algae {
           background-image: url('../img/popup/Upwell_harmful-algae-bloom.png');
         }
@@ -215,7 +217,6 @@
         #pop-image-fog-watershed-refill {
           background-image: url('../img/popup/Fog_watershed-refill.png');
         }
-
 
         .popup-pop-bubble-btn-close {
           position: absolute;
@@ -323,7 +324,6 @@
         border-bottom: 30px solid transparent;
         border-right: 54px solid #fff;
       }
-
 
     }
 

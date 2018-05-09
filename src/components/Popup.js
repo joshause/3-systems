@@ -532,9 +532,13 @@ class Popup extends Component {
                 </div>
               </div>
               <div
-                id={"popup-pop-button-"+i}
-                className={_this.props.activePop === i ? "popup-pop-button " + origin + " selected" : "popup-pop-button " + origin}
+                id={"popup-pop-button-top-"+i}
+                className={_this.props.activePop === i ? "popup-pop-button-top " + origin + " selected" : "popup-pop-button-top " + origin}
                 onClick={(e) => _this.props.handlerSelectPop(e, i, sticker, anim)}
+              />
+              <div
+                id={"popup-pop-button-bottom"+i}
+                className={_this.props.activePop === i ? "popup-pop-button-bottom " + origin + " selected" : "popup-pop-button-bottom " + origin}
               />
               <div
                 className={_this.props.activePop === i ? '' : 'hide'}

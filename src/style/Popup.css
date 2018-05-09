@@ -8,7 +8,7 @@
     color: #000; }
     #popup .container-popup-pop .popup-pop.wide {
       width: 820px; }
-    #popup .container-popup-pop .popup-pop .popup-pop-button {
+    #popup .container-popup-pop .popup-pop .popup-pop-button-top {
       position: absolute;
       z-index: 999;
       background-repeat: no-repeat;
@@ -17,32 +17,44 @@
       height: 40px;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
-      #popup .container-popup-pop .popup-pop .popup-pop-button:active {
+      transform: translate(-50%, -50%);
+      background-image: none; }
+    #popup .container-popup-pop .popup-pop .popup-pop-button-bottom {
+      position: absolute;
+      z-index: 998;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: none; }
+      #popup .container-popup-pop .popup-pop .popup-pop-button-bottom:active {
         opacity: 0.7; }
-      .system-0 #popup .container-popup-pop .popup-pop .popup-pop-button.selected {
+      .system-0 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
         background-image: url("../img/system-0-popup-btn-active.png") !important; }
-      .system-1 #popup .container-popup-pop .popup-pop .popup-pop-button.selected {
+      .system-1 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
         background-image: url("../img/system-1-popup-btn-active.png") !important; }
-      .system-2 #popup .container-popup-pop .popup-pop .popup-pop-button.selected {
+      .system-2 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
         background-image: url("../img/system-2-popup-btn-active.png") !important; }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-0 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-0 {
       background-image: url("../img/popup-btn-1.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-1 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-1 {
       background-image: url("../img/popup-btn-2.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-2 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-2 {
       background-image: url("../img/popup-btn-3.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-3 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-3 {
       background-image: url("../img/popup-btn-4.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-4 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-4 {
       background-image: url("../img/popup-btn-5.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-5 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-5 {
       background-image: url("../img/popup-btn-6.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-6 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-6 {
       background-image: url("../img/popup-btn-7.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-7 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-7 {
       background-image: url("../img/popup-btn-8.png"); }
-    #popup .container-popup-pop .popup-pop #popup-pop-button-8 {
+    #popup .container-popup-pop .popup-pop #popup-pop-button-top-8 {
       background-image: url("../img/popup-btn-9.png"); }
     #popup .container-popup-pop .popup-pop .bottom-left {
       top: calc(100% + 84px) !important;
@@ -64,12 +76,7 @@
       background-color: #fff;
       min-height: 230px;
       margin-top: -1px;
-      display: inline-block;
-      /*
-        #pop-image-placeholder {
-          background-image: url('../img/popup/placeholder.png');
-        }
-        */ }
+      display: inline-block; }
       #popup .container-popup-pop .popup-pop .popup-pop-bubble .popup-pop-image {
         float: left;
         background-repeat: no-repeat;
