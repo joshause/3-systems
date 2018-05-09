@@ -232,7 +232,7 @@ class Loader extends Component {
             <div id="upwelling_disappearing-kelp" />
             <div id="upwelling_harmful-algae-bloom" />
             <div id="upwelling_kelp-forest" />
-            <div id="upwelling_mammal-mammal-impacts" />
+            <div id="upwelling_marine-mammal-impacts" />
             <div id="upwelling_ocean-research" />
             <div id="upwelling_plankton-bloom" />
             <div id="upwelling_sheltered-by-kelp" />
