@@ -8,7 +8,7 @@ class Loader extends Component {
     if (this.props.data !== prevProps.data) {
       setTimeout(function() {
         _this.props.handlerLoadComplete()
-      }, 180000)
+      }, 120000)
     }
   }
 
@@ -202,6 +202,8 @@ class Loader extends Component {
           {animFogEphemeralFog}
           {animFogFantasticFogFlows}
           {animFogCoastalContours}
+          {animFogWatershedRefill}
+          {animFogNavigatingFog}
           {animUpwellingPlayAll}
           {animUpwellingCaliforniaCurrent}
           {animUpwellingPrevailingWinds}
