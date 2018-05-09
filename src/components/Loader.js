@@ -77,7 +77,7 @@ class Loader extends Component {
         for (i = 0; i < 302; i++) {
           fiver = ('0000' + i).slice(-5)
           animCarbonOilReservoirs.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-oil-reservoirsl/carbon_v16_OilReservoirs_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-oil-reservoirs/carbon_v16_OilReservoirs_" + fiver + ".png"} alt="" />
           )
         }
 
@@ -148,37 +148,37 @@ class Loader extends Component {
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-play-all/upwelling_v16_playAll_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 792; i++) {
+        for (i = 0; i < 301; i++) {
           fiver = ('0000' + i).slice(-5)
           animUpwellingCaliforniaCurrent.push(
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-california-current/upwelling_v16_caCurrent_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 792; i++) {
+        for (i = 0; i < 301; i++) {
           fiver = ('0000' + i).slice(-5)
           animUpwellingPrevailingWinds.push(
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-prevailing-winds/upwelling_v16_prevailingWinds_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 792; i++) {
+        for (i = 0; i < 411; i++) {
           fiver = ('0000' + i).slice(-5)
           animUpwellingNutrientRichWater.push(
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-nutrient-rich-water/upwelling_v16_nutrientUpwelling_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 792; i++) {
+        for (i = 0; i < 301; i++) {
           fiver = ('0000' + i).slice(-5)
           animUpwellingPlanktonBloom.push(
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-plankton-bloom/upwelling_v16_planktonBloom_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 792; i++) {
+        for (i = 0; i < 301; i++) {
           fiver = ('0000' + i).slice(-5)
           animUpwellingSeaOfChange.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-sea-of-change/upwelling_v16_seoOfChange_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-sea-of-change/upwelling_v16_seaOfChange_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 792; i++) {
+        for (i = 0; i < 361; i++) {
           fiver = ('0000' + i).slice(-5)
           animUpwellingToxicBloom.push(
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-toxic-bloom/upwelling_v16_toxicBloom_" + fiver + ".png"} alt="" />

@@ -52,8 +52,8 @@ class Credits extends Component {
             var desc = ''
             var markupDesc = ''
 
-            if (cred['header_'+lang].safe_value) {
-              header = cred['header_'+lang].safe_value
+            if (cred['header_'+lang].value) {
+              header = cred['header_'+lang].value
             }
             if (cred[lang].safe_value) {
               desc = cred[lang].safe_value

@@ -136,7 +136,7 @@ class App extends Component {
         this.setState({
           currentLanguage: 0
         })
-        if (this.state.currentSection !== 0) {
+        if ((this.state.currentSection !== 0) || (this.state.display === 'credits')) {
           this.setState({
             currentSection: 0,
             currentLanguage: 0,
@@ -257,7 +257,8 @@ class App extends Component {
     e.preventDefault()
     if (this.state.display !== 'credits') {
       this.setState({
-        display: 'credits'
+        display: 'credits',
+        dateLastTouch: new Date()
       })
     }
   }
@@ -265,7 +266,8 @@ class App extends Component {
     e.preventDefault()
     if (this.state.display === 'credits') {
       this.setState({
-        display: 'system'
+        display: 'system',
+        dateLastTouch: new Date()
       })
     }
   }
