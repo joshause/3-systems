@@ -53,31 +53,31 @@ class Loader extends Component {
         for (i = 0; i < 1007; i++) {
           fiver = ('0000' + i).slice(-5)
           animCarbonPlayAll.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-play-all/carbon_v17_playAll_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-play-all/carbon_v18_playAll_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 301; i++) {
           fiver = ('0000' + i).slice(-5)
           animCarbonSanAndreasFault.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-san-andreas-fault/carbon_v16_SanAndreasFault_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-san-andreas-fault/carbon_v18_SanAndreasFault_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 301; i++) {
           fiver = ('0000' + i).slice(-5)
           animCarbonVolcanoesSpewCarbon.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-volcanoes-spew-carbon/carbon_v16_volcanoesSpewCarbon_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-volcanoes-spew-carbon/carbon_v18_volcanoesSpewCarbon_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 400; i++) {
           fiver = ('0000' + i).slice(-5)
           animCarbonCarbonReturnsToRock.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-carbon-returns-to-rock/carbon_v17_carbonReturnsToRock_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-carbon-returns-to-rock/carbon_v18_carbonReturnsToRock_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 302; i++) {
           fiver = ('0000' + i).slice(-5)
           animCarbonOilReservoirs.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-oil-reservoirs/carbon_v16_OilReservoirs_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-oil-reservoirs/carbon_v18_OilReservoirs_" + fiver + ".png"} alt="" />
           )
         }
 
@@ -87,7 +87,7 @@ class Loader extends Component {
         for (i = 0; i < 996; i++) {
           fiver = ('0000' + i).slice(-5)
           animFogPlayAll.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-play-all/fog_v16_playAll_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-play-all/fog_v18_playAll_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 301; i++) {
@@ -96,10 +96,10 @@ class Loader extends Component {
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-california-current/fog_v16_caCurrent_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 301; i++) {
+        for (i = 0; i < 299; i++) {
           fiver = ('0000' + i).slice(-5)
           animFogValleyVacuum.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-valley-vacuum/fog_v16_valleyVacuum_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-valley-vacuum/fog_v18_valleyVacuum_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 446; i++) {
@@ -108,10 +108,10 @@ class Loader extends Component {
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-fog-blanket/fog_v16_fogBlanket_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 321; i++) {
+        for (i = 0; i < 344; i++) {
           fiver = ('0000' + i).slice(-5)
           animFogEphemeralFog.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-ephemeral-fog/fog_v16_ephemeralFog_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-ephemeral-fog/fog_v18_ephemeralFog_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 301; i++) {
@@ -120,10 +120,10 @@ class Loader extends Component {
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-fantastic-fog-flows/fog_v16_fantasticFogFlows_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 301; i++) {
+        for (i = 0; i < 328; i++) {
           fiver = ('0000' + i).slice(-5)
           animFogCoastalContours.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-coastal-contours/fog_v16_coastalContours_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-coastal-contours/fog_v18_coastalContours_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 301; i++) {
@@ -132,10 +132,10 @@ class Loader extends Component {
             <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-watershed-refill/fog_v16_watershedRefill_" + fiver + ".png"} alt="" />
           )
         }
-        for (i = 0; i < 301; i++) {
+        for (i = 0; i < 313; i++) {
           fiver = ('0000' + i).slice(-5)
           animFogNavigatingFog.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-navigating-fog/fog_v16_navigatingFog_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/fog-navigating-fog/fog_v18_navigatingFog_" + fiver + ".png"} alt="" />
           )
         }
 
@@ -175,7 +175,7 @@ class Loader extends Component {
         for (i = 0; i < 301; i++) {
           fiver = ('0000' + i).slice(-5)
           animUpwellingSeaOfChange.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-sea-of-change/upwelling_v16_seaOfChange_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/upwelling-sea-of-change/upwelling_v18_seaOfChange_" + fiver + ".png"} alt="" />
           )
         }
         for (i = 0; i < 361; i++) {

@@ -47,7 +47,7 @@ class Anim extends Component {
               arrAnims: [
                 {
                   name: 'upwelling-sea-of-change',
-                  filebase: 'upwelling_v16_seaOfChange_',
+                  filebase: 'upwelling_v18_seaOfChange_',
                   frames: 301
                 },
                 {
@@ -65,7 +65,7 @@ class Anim extends Component {
               arrAnims: [
                 {
                   name: 'carbon-play-all',
-                  filebase: 'carbon_v17_playAll_',
+                  filebase: 'carbon_v18_playAll_',
                   frames: 1007
                 }
               ]
@@ -75,22 +75,22 @@ class Anim extends Component {
                 {},
                 {
                   name: 'carbon-san-andreas-fault',
-                  filebase: 'carbon_v16_SanAndreasFault_',
+                  filebase: 'carbon_v18_SanAndreasFault_',
                   frames: 301
                 },
                 {
                   name: 'carbon-volcanoes-spew-carbon',
-                  filebase: 'carbon_v16_volcanoesSpewCarbon_',
+                  filebase: 'carbon_v18_volcanoesSpewCarbon_',
                   frames: 301
                 },
                 {
                   name: 'carbon-carbon-returns-to-rock',
-                  filebase: 'carbon_v17_carbonReturnsToRock_',
+                  filebase: 'carbon_v18_carbonReturnsToRock_',
                   frames: 400
                 },
                 {
                   name: 'carbon-oil-reservoirs',
-                  filebase: 'carbon_v16_OilReservoirs_',
+                  filebase: 'carbon_v18_OilReservoirs_',
                   frames: 302
                 }
               ]
@@ -106,7 +106,7 @@ class Anim extends Component {
               arrAnims: [
                 {
                   name: 'fog-play-all',
-                  filebase: 'fog_v16_playAll_',
+                  filebase: 'fog_v18_playAll_',
                   frames: 996
                 }
               ]
@@ -120,8 +120,8 @@ class Anim extends Component {
                 },
                 {
                   name: 'fog-valley-vacuum',
-                  filebase: 'fog_v16_valleyVacuum_',
-                  frames: 301
+                  filebase: 'fog_v18_valleyVacuum_',
+                  frames: 299
                 },
                 {
                   name: 'fog-fog-blanket',
@@ -131,8 +131,8 @@ class Anim extends Component {
                 {},
                 {
                   name: 'fog-ephemeral-fog',
-                  filebase: 'fog_v16_ephemeralFog_',
-                  frames: 321
+                  filebase: 'fog_v18_ephemeralFog_',
+                  frames: 344
                 },
                 {
                   name: 'fog-fantastic-fog-flows',
@@ -141,8 +141,8 @@ class Anim extends Component {
                 },
                 {
                   name: 'fog-coastal-contours',
-                  filebase: 'fog_v16_coastalContours_',
-                  frames: 301
+                  filebase: 'fog_v18_coastalContours_',
+                  frames: 328
                 }
               ]
             },
@@ -159,8 +159,8 @@ class Anim extends Component {
                 {},
                 {
                   name: 'fog-navigating-fog',
-                  filebase: 'fog_v16_navigatingFog_',
-                  frames: 301
+                  filebase: 'fog_v18_navigatingFog_',
+                  frames: 313
                 }
               ]
             }

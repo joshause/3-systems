@@ -41,7 +41,7 @@ running, Webpack will use development variable in .env.development file (see
   using production variable in .env.production file (prior to deployment).
 
 ```
-yarn dev
+yarn start
 yarn build
 ```
 
