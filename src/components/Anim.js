@@ -90,7 +90,7 @@ class Anim extends Component {
                 },
                 {
                   name: 'carbon-oil-reservoirs',
-                  filebase: 'carbon_v18_OilReservoirs_',
+                  filebase: 'carbon_v18_oilReservoirs_',
                   frames: 302
                 }
               ]

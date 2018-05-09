@@ -77,7 +77,7 @@ class Loader extends Component {
         for (i = 0; i < 302; i++) {
           fiver = ('0000' + i).slice(-5)
           animCarbonOilReservoirs.push(
-            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-oil-reservoirs/carbon_v18_OilReservoirs_" + fiver + ".png"} alt="" />
+            <img key={i} src={process.env.REACT_APP_ANIMATION_PATH + "/carbon-oil-reservoirs/carbon_v18_oilReservoirs_" + fiver + ".png"} alt="" />
           )
         }
 
