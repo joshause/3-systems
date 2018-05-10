@@ -33,7 +33,7 @@ font-style: normal;
 }
 @font-face {
 font-family: 'W-Narrow-Book';
-src: url('../fonts/W-Narr-Book.otf') format('opentype');
+src: url('../fonts/W-Narr-Book-Old.otf') format('opentype');
 font-weight: normal;
 font-style: normal;
 }
@@ -73,10 +73,10 @@ body {
   cursor: none ;
   user-select: none;
   -webkit-user-select: none;
-  -webkit-font-feature-settings: "ss17" 1;
-  -moz-font-feature-settings: "ss17" 1;
-  -ms-font-feature-settings: "ss17" 1;
-  font-feature-settings: "ss17" 1;
+  -webkit-font-feature-settings: "ss17" 1, "onum" 1;
+  -moz-font-feature-settings: "ss17" 1, "onum" 1;
+  -ms-font-feature-settings: "ss17" 1, "onum" 1;
+  font-feature-settings: "ss17" 1, "onum" 1;
 
   #root {
     width: 100%;
