@@ -32,3 +32,23 @@
       .system-2 #nav #container-nav-buttons button.selected {
         color: #6cc24a;
         background-color: #fff; }
+      #nav #container-nav-buttons button.pulse {
+        animation: pulse 12s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0); }
+  70% {
+    background-color: rgba(255, 255, 255, 0); }
+  75% {
+    background-color: rgba(255, 255, 255, 0.2); }
+  80% {
+    background-color: rgba(255, 255, 255, 0); }
+  85% {
+    background-color: rgba(255, 255, 255, 0.2); }
+  90% {
+    background-color: rgba(255, 255, 255, 0); }
+  95% {
+    background-color: rgba(255, 255, 255, 0.2); }
+  100% {
+    background-color: rgba(255, 255, 255, 0); } }

@@ -11,10 +11,7 @@
     z-index: 1;
     bottom: 150px;
     left: 50px;
-    //margin-left: 50px;
-    //margin-bottom: 150px;
     width: 280px;
-    //height: 500px;
 
     button {
       color: #fff;
@@ -48,8 +45,37 @@
           background-color: #fff;
         }
       }
+      &.pulse {
+        animation: pulse 12s $easing infinite;
+      }
     }
-
   }
 
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  70% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  75% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  80% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  85% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  90% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  95% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
 }

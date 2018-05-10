@@ -134,16 +134,11 @@ class App extends Component {
     if (this.state.dateLastTouch !== null) {
       if (this.state.dateLastTouch < check) {
         this.setState({
-          currentLanguage: 0
+          currentSection: 0,
+          currentLanguage: 0,
+          display: 'system',
+          dateLastTouch: null
         })
-        if ((this.state.currentSection !== 0) || (this.state.display === 'credits')) {
-          this.setState({
-            currentSection: 0,
-            currentLanguage: 0,
-            display: 'system',
-            dateLastTouch: null
-          })
-        }
       }
     }
   }
@@ -300,6 +295,9 @@ class App extends Component {
     this._getData()
     this._minimizeForPreview()
     this._setAppInstanceSystem()
+    this.setState({
+      dateLastTouch: new Date()
+    })
     setInterval(() => this._inactivityCheck(), 5000)
   }
 
@@ -356,8 +354,8 @@ class App extends Component {
             system={this.state.system}
             currentSection={this.state.currentSection}
             language={this.state.currentLanguage}
-            handlerSelectSection = {this.handlerSelectSection}
-            handlerReceivePopupTouch = {this.handlerReceivePopupTouch}
+            handlerSelectSection={this.handlerSelectSection}
+            handlerReceivePopupTouch={this.handlerReceivePopupTouch}
           />
         </div>
       </div>

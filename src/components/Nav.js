@@ -58,7 +58,7 @@ class Nav extends Component {
             dataSectionNav: arrSectionNavData
           })
         }
-      
+
       }
 
     }
@@ -115,6 +115,14 @@ class Nav extends Component {
     var markupNav1 = {__html: this.state.sectionNav1}
     var markupNav2 = {__html: this.state.sectionNav2}
 
+    var secondButtonClass = ''
+
+    if (this.props.currentSection === 1) {
+      secondButtonClass = 'selected'
+    } else  if (this.props.currentSection === 0) {
+      secondButtonClass = 'pulse'
+    }
+
     rows.push(
       <div id="container-nav-buttons" key="0">
         <button
@@ -123,7 +131,7 @@ class Nav extends Component {
           ><span dangerouslySetInnerHTML={markupNav0} /></button>
         <button
           onClick={(e) => this.props.handlerSelectSection(e, 1)}
-          className={this.props.currentSection === 1 ? 'selected' : ''}
+          className={secondButtonClass}
           ><span dangerouslySetInnerHTML={markupNav1} /></button>
         <button
           onClick={(e) => this.props.handlerSelectSection(e, 2)}
