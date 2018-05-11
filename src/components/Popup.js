@@ -300,7 +300,7 @@ class Popup extends Component {
                 {
                   xPos: 860,
                   yPos: 700,
-                  image: 'fog-fantastic-fog-flows',
+                  image: 'fog-coastal-contours',
                   sticker: '',
                   anim: 'fog-fantastic-fog-flows',
                   origin: 'top-right'
@@ -308,7 +308,7 @@ class Popup extends Component {
                 {
                   xPos: 1050,
                   yPos: 400,
-                  image: 'fog-coastal-contours',
+                  image: 'fog-fantastic-fog-flows',
                   sticker: '',
                   anim: 'fog-coastal-contours',
                   origin: 'bottom-right'
