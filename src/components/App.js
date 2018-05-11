@@ -341,6 +341,7 @@ class App extends Component {
         <div id="container-credits"
           className={this.state.display !== 'credits' ? 'hide-anim' : ''}>
           <Credits
+            display={this.state.display}
             dataCredits={dataCredits}
             handlerCloseCredits={this.handlerCloseCredits}
             language={this.state.currentLanguage}

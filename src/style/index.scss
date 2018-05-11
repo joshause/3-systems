@@ -68,6 +68,7 @@ body {
   width: 1920px;
   height: 1080px;
   overflow: hidden;
+  position: fixed;
   margin: 0;
   padding: 0;
   cursor: none ;
@@ -108,4 +109,10 @@ body {
     top: 0.4em;
   }
 
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  background: transparent;
 }

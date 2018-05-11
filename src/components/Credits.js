@@ -18,6 +18,13 @@ class Credits extends Component {
     }
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if ((this.props.display === 'credits') && (prevProps.display !== 'credits')) {
+      var scroll = document.getElementById('credits-scroll-container')
+      scroll.scrollTop = 0
+    }
+  }
+
   render() {
 
     var language = this.props.language
@@ -44,45 +51,45 @@ class Credits extends Component {
 
     if (this.state.credits) {
       var credits = this.state.credits
-      if (credits[0]) {
-        if (credits[0].credits) {
-          credits[0].credits.forEach(function(cred, i) {
+      if (credits) {
+        credits.forEach(function(cred, i) {
 
-            var header = ''
-            var desc = ''
-            var markupDesc = ''
+          var header = ''
+          var desc = ''
+          var markupDesc = ''
 
-            if (cred['header_'+lang].value) {
-              header = cred['header_'+lang].value
-            }
-            if (cred[lang].safe_value) {
-              desc = cred[lang].safe_value
-              desc = desc.replace(/<\/?a[^>]*>/g, "")
-              markupDesc = {__html: desc}
-            }
+          if (cred['header_'+lang]) {
+            header = cred['header_'+lang]
+          }
+          if (cred[lang]) {
+            desc = cred[lang]
+            desc = desc.replace(/<\/?a[^>]*>/g, "")
+            markupDesc = {__html: desc}
+          }
 
-            rows.push(
-              <li
-                key={i}
-                >
-                  <h2>{header}</h2>
-                  <p dangerouslySetInnerHTML={markupDesc} />
-                </li>
-            )
-
-          })
-        }
+          rows.push(
+            <li
+              key={i}
+              >
+                <h2>{header}</h2>
+                <p dangerouslySetInnerHTML={markupDesc} />
+              </li>
+          )
+        })
       }
+
     }
 
     return(
       <div id="credits">
         <button
           onClick={(e) => this.props.handlerCloseCredits(e)} />
-        <h1>Credits</h1>
-        <ul>
-          {rows}
-        </ul>
+        <div id="credits-scroll-container">
+          <h1>Credits</h1>
+          <ul>
+            {rows}
+          </ul>
+        </div>
       </div>
     )
   }
