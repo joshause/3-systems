@@ -23,21 +23,25 @@
       position: absolute;
       z-index: 998;
       background-repeat: no-repeat;
-      background-position: 0 0;
+      background-position: center center;
       width: 40px;
       height: 40px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: none; }
+      background-image: none;
+      background-size: 1%;
+      transition: background-size 0.5s cubic-bezier(0.215, 0.61, 0.355, 1); }
       #popup .container-popup-pop .popup-pop .popup-pop-button-bottom:active {
         opacity: 0.7; }
-      .system-0 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
-        background-image: url("../img/system-0-popup-btn-active.png") !important; }
-      .system-1 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
-        background-image: url("../img/system-1-popup-btn-active.png") !important; }
-      .system-2 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
-        background-image: url("../img/system-2-popup-btn-active.png") !important; }
+      #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
+        background-size: 100%; }
+        .system-0 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
+          background-image: url("../img/system-0-popup-btn-active.png") !important; }
+        .system-1 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
+          background-image: url("../img/system-1-popup-btn-active.png") !important; }
+        .system-2 #popup .container-popup-pop .popup-pop .popup-pop-button-bottom.selected {
+          background-image: url("../img/system-2-popup-btn-active.png") !important; }
     #popup .container-popup-pop .popup-pop #popup-pop-button-top-0 {
       background-image: url("../img/popup-btn-1.png"); }
     #popup .container-popup-pop .popup-pop #popup-pop-button-top-1 {

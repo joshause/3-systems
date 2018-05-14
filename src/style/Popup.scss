@@ -1,23 +1,5 @@
 @import "./_vars.scss";
 
-
-@mixin if-direct-parent($parent-selector) {
-  $current-sequences: &;
-  $new-sequences: ();
-
-  @each $sequence in $current-sequences {
-    $current-selector: nth($sequence, -1);
-    $prepended-selector: join($parent-selector, $current-selector);
-    $new-sequence: set-nth($sequence, -1, $prepended-selector);
-    $new-sequences: append($new-sequences, $new-sequence, comma);
-  }
-
-  @at-root #{$new-sequences} {
-    @content;
-  }
-}
-
-
 #popup {
 
   .container-popup-pop {
@@ -53,17 +35,20 @@
         position: absolute;
         z-index: 998;
         background-repeat: no-repeat;
-        background-position: 0 0;
+        background-position: center center;
         width: 40px;
         height: 40px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-image: none;
+        background-size: 1%;
+        transition: background-size 0.5s $easing;
         &:active {
           opacity: 0.7;
         }
         &.selected {
+          background-size: 100%;
           .system-0 &  {
             background-image: url('../img/system-0-popup-btn-active.png') !important;
           }
