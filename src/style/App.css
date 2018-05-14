@@ -11,11 +11,12 @@
     zoom: 0.6;
     cursor: pointer !important; }
   #app #container-loader {
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 1080px;
     background-color: #000;
     position: absolute;
-    z-index: 20; }
+    z-index: 20;
+    overflow: hidden; }
   #app #sky {
     width: 1920px;
     height: 1080px;
