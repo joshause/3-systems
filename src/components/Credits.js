@@ -89,6 +89,7 @@ class Credits extends Component {
           <ul>
             {rows}
           </ul>
+          <div id="credits-mask" />
         </div>
       </div>
     )
