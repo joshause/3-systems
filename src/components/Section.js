@@ -27,19 +27,27 @@ class Section extends Component {
 
   _selectPop(e, p, s, a) {
     e.preventDefault()
-    this.setState({
-      activePop: p,
-      activeSticker: s,
-      activeAnim: a
-    })
-    this.props.handlerReceivePopupTouch(p)
-
-    var pops = document.getElementsByClassName("container-popup-pop")
-    for(var i =0; i < pops.length; i++) {
-      pops[i].style.zIndex = "999"
+    if (this.state.activePop === p) {
+      this.setState({
+        activePop: null,
+        activeAnim: '',
+        activeSticker: ''
+      })
+    } else {
+      this.setState({
+        activePop: p,
+        activeSticker: s,
+        activeAnim: a
+      })
+      var pops = document.getElementsByClassName("container-popup-pop")
+      for(var i =0; i < pops.length; i++) {
+        pops[i].style.zIndex = "999"
+      }
+      var el = e.target.id
+      document.getElementById(el).closest(".container-popup-pop").style.zIndex = "1000"
     }
-    var el = e.target.id
-    document.getElementById(el).closest(".container-popup-pop").style.zIndex = "1000"
+
+    this.props.handlerReceivePopupTouch(p)
 
   }
 
