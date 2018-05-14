@@ -204,6 +204,7 @@ class Section extends Component {
             system={this.props.system}
             currentSection={this.props.currentSection}
             activeSticker={this.state.activeSticker}
+            activePop={this.state.activePop}
           />
         </div>
         <div id="container-anim">

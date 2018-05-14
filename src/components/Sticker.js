@@ -132,37 +132,23 @@ class Sticker extends Component {
     }
   }
 
-  componentDidMount() {}
-
-  componentDidUpdate(prevProps, prevState) {}
-
   componentWillReceiveProps(nextProps) {
-
-    if ((nextProps.activeSticker !== this.props.activeSticker) || (nextProps.activeSticker === ''))  {
+    if ((nextProps.activePop !== this.props.activePop) || (nextProps.activePop === null))  {
       var arr = []
-      if (nextProps.activeSticker !== '') {
+      if (nextProps.activePop === null) {
+        var stickers = this.state.arrSystems[this.props.system].arrSections[nextProps.currentSection].arrStickers
+        stickers.forEach(function(stick) {
+          if (stick['name']) {
+            arr.push(stick['name'])
+          }
+        })
+      } else {
         arr.push(nextProps.activeSticker)
       }
       this.setState({
         activeStickers: arr
       })
     }
-
-    if (nextProps.currentSection !== this.props.currentSection) {
-      // on section load make any section stickers active
-      var arrActiveStickers = []
-      var stickers = this.state.arrSystems[this.props.system].arrSections[nextProps.currentSection].arrStickers
-      stickers.forEach(function(stick) {
-        if (stick['name']) {
-          arrActiveStickers.push(stick['name'])
-        }
-      })
-      this.setState({
-        activeStickers: arrActiveStickers
-      })
-
-    }
-
   }
 
   render() {
