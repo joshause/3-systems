@@ -171,8 +171,8 @@ class Popup extends Component {
                   origin: 'top-left'
                 },
                 {
-                  xPos: 950,
-                  yPos: 930,
+                  xPos: 970,
+                  yPos: 920,
                   image: 'carbon-oil-reservoirs',
                   sticker: '',
                   anim: 'carbon-oil-reservoirs',
