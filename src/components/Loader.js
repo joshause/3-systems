@@ -8,7 +8,7 @@ class Loader extends Component {
     if (this.props.data !== prevProps.data) {
       setTimeout(function() {
         _this.props.handlerLoadComplete()
-      }, 1200)
+      }, 120000)
     }
   }
 
