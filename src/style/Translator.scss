@@ -45,15 +45,22 @@
       //border-right: none !important;
       font-family: 'W-Narrow-Semibold';
       font-size: 15px;
+      width: 100px;
+      &.active {
+        span {
+          font-family: 'W-Narrow-Semibold';
+          color: $gray;
+        }
+      }
     }
-    /*
+
     &.active {
       span {
         font-family: 'W-Condensed-Semibold', 'SourceHanSansCN-Bold';
         color: #fff;
       }
     }
-    */
+
 
   }
 
