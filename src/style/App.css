@@ -45,11 +45,10 @@
     background-color: #000; }
   #app #container-credits {
     width: 1920px;
-    height: 1035px;
+    height: 1080px;
     overflow: hidden;
     position: absolute;
-    top: 45px;
-    z-index: 9;
+    z-index: 999;
     background-color: #000;
     visibility: visible;
     opacity: 1;

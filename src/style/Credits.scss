@@ -7,8 +7,8 @@
   button {
     position: absolute;
     z-index: 1;
-    top: 32px;
-    left: 50px;
+    top: 77px;
+    right: 50px;
     width: 62px;
     height: 62px;
     background-image: url('../img/credits-close-btn.svg');
@@ -23,10 +23,10 @@
   #credits-scroll-container {
     overflow-y: auto;
     overflow-x: hidden;
-    height: 1035px;
+    height: 1080px;
 
     h1 {
-      margin-top: 32px;
+      margin-top: 77px;
   		margin-bottom: 30px;
       text-align: center;
   		font-family: 'W-Narrow-Book';

@@ -20,6 +20,9 @@ class Translator extends Component {
     return(
       <div id="translator">
         <button
+          className={this.props.display === 'credits' ? 'credits active' : 'credits'}
+          onClick={(e) => this.props.handlerSelectCredits(e)}><span>Credits</span></button>
+        <button
           className={this.state.currentLanguage === 3 ? 'active' : ''}
           onClick={(e) => this.props.handlerSelectLanguage(e, 3)}><span>FILIPINO</span></button>
         <button
@@ -31,9 +34,6 @@ class Translator extends Component {
         <button
           className={this.state.currentLanguage === 0 ? 'active' : ''}
           onClick={(e) => this.props.handlerSelectLanguage(e, 0)}><span>ENGLISH</span></button>
-        <button
-          className={this.props.display === 'credits' ? 'credits active' : 'credits'}
-          onClick={(e) => this.props.handlerSelectCredits(e)}><span>Credits</span></button>
       </div>
     )
   }
