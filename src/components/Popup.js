@@ -21,14 +21,14 @@ class Popup extends Component {
               arrPopups: [
                 {
                   xPos: 900,
-                  yPos: 510,
+                  yPos: 560,
                   image: '',
                   sticker: '',
                   anim: 'upwelling-california-current',
                   origin: 'bottom-left' // left, right, top-left, top-right, bottom-left, bottom-right
                 },
                 {
-                  xPos: 720,
+                  xPos: 550,
                   yPos: 330,
                   image: '',
                   sticker: '',
@@ -68,8 +68,8 @@ class Popup extends Component {
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 620,
-                  yPos: 710,
+                  xPos: 740,
+                  yPos: 760,
                   image: 'upwelling-dining-destinations',
                   sticker: 'whale',
                   anim: '',
@@ -147,8 +147,8 @@ class Popup extends Component {
                   origin: 'top-right' // left, right, top-left, top-right, bottom-left, bottom-right
                 },
                 {
-                  xPos: 750,
-                  yPos: 760,
+                  xPos: 765,
+                  yPos: 730,
                   image: '',
                   sticker: '',
                   anim: 'carbon-san-andreas-fault',
@@ -163,8 +163,8 @@ class Popup extends Component {
                   origin: 'top-right'
                 },
                 {
-                  xPos: 1140,
-                  yPos: 450,
+                  xPos: 1120,
+                  yPos: 410,
                   image: '',
                   sticker: '',
                   anim: 'carbon-carbon-returns-to-rock',
@@ -200,7 +200,7 @@ class Popup extends Component {
                 },
                 {
                   xPos: 580,
-                  yPos: 850,
+                  yPos: 870,
                   image: '',
                   sticker: 'oil-rig',
                   anim: '',
@@ -239,8 +239,8 @@ class Popup extends Component {
                   origin: 'top-right'
                 },
                 {
-                  xPos: 950,
-                  yPos: 530,
+                  xPos: 825,
+                  yPos: 450,
                   image: 'carbon-forests-store-carbon',
                   sticker: 'redwood',
                   anim: '',
@@ -259,7 +259,7 @@ class Popup extends Component {
               arrPopups: [
                 {
                   xPos: 1150,
-                  yPos: 720,
+                  yPos: 780,
                   image: '',
                   sticker: '',
                   anim: 'fog-california-current',
@@ -274,16 +274,16 @@ class Popup extends Component {
                   origin: 'bottom-right'
                 },
                 {
-                  xPos: 510,
-                  yPos: 400,
+                  xPos: 540,
+                  yPos: 360,
                   image: 'fog-fog-blanket',
                   sticker: '',
                   anim: 'fog-fog-blanket',
                   origin: 'bottom-left'
                 },
                 {
-                  xPos: 680,
-                  yPos: 350,
+                  xPos: 700,
+                  yPos: 345,
                   image: 'fog-water-in-the-air',
                   sticker: '',
                   anim: '',
@@ -307,7 +307,7 @@ class Popup extends Component {
                 },
                 {
                   xPos: 1050,
-                  yPos: 400,
+                  yPos: 390,
                   image: 'fog-fantastic-fog-flows',
                   sticker: '',
                   anim: 'fog-coastal-contours',
@@ -342,16 +342,16 @@ class Popup extends Component {
                   origin: 'bottom-right'
                 },
                 {
-                  xPos: 760,
-                  yPos: 400,
+                  xPos: 860,
+                  yPos: 610,
                   image: 'fog-chardonnay-loves-fog',
                   sticker: 'wine',
                   anim: '',
-                  origin: 'bottom-right'
+                  origin: 'top-right'
                 },
                 {
-                  xPos: 770,
-                  yPos: 700,
+                  xPos: 950,
+                  yPos: 665,
                   image: 'fog-field-of-fog',
                   sticker: '',
                   anim: '',
