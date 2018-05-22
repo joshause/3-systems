@@ -240,7 +240,7 @@ class Popup extends Component {
                 },
                 {
                   xPos: 825,
-                  yPos: 450,
+                  yPos: 460,
                   image: 'carbon-forests-store-carbon',
                   sticker: 'redwood',
                   anim: '',
