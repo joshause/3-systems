@@ -126,14 +126,17 @@ class Nav extends Component {
     rows.push(
       <div id="container-nav-buttons" key="0">
         <button
+          onTouchEnd={(e) => this.props.handlerSelectSection(e, 0)}
           onClick={(e) => this.props.handlerSelectSection(e, 0)}
           className={this.props.currentSection === 0 ? 'selected' : ''}
           ><span dangerouslySetInnerHTML={markupNav0} /></button>
         <button
+          onTouchEnd={(e) => this.props.handlerSelectSection(e, 1)}
           onClick={(e) => this.props.handlerSelectSection(e, 1)}
           className={secondButtonClass}
           ><span dangerouslySetInnerHTML={markupNav1} /></button>
         <button
+          onTouchEnd={(e) => this.props.handlerSelectSection(e, 2)}
           onClick={(e) => this.props.handlerSelectSection(e, 2)}
           className={this.props.currentSection === 2 ? 'selected' : ''}
           ><span dangerouslySetInnerHTML={markupNav2} /></button>

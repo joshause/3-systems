@@ -83,7 +83,9 @@ class Credits extends Component {
     return(
       <div id="credits">
         <button
-          onClick={(e) => this.props.handlerCloseCredits(e)} />
+          onTouchEnd={(e) => this.props.handlerCloseCredits(e)}
+          onClick={(e) => this.props.handlerCloseCredits(e)}
+        />
         <div id="credits-scroll-container">
           <h1>Credits</h1>
           <ul>

@@ -522,6 +522,7 @@ class Popup extends Component {
                 />
                 <div
                   className="popup-pop-bubble-btn-close"
+                  onTouchEnd={(e) => _this.props.handlerClosePop(e)}
                   onClick={(e) => _this.props.handlerClosePop(e)}
                 />
                 <div
@@ -534,6 +535,7 @@ class Popup extends Component {
               <div
                 id={"popup-pop-button-top-"+i}
                 className={_this.props.activePop === i ? "popup-pop-button-top " + origin + " selected" : "popup-pop-button-top " + origin}
+                onTouchEnd={(e) => _this.props.handlerSelectPop(e, i, sticker, anim)}
                 onClick={(e) => _this.props.handlerSelectPop(e, i, sticker, anim)}
               />
               <div
